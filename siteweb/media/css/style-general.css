@@ -49,6 +49,7 @@ nav ul {
     gap: 25px;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 0;
 }
 
 nav li {
@@ -90,5 +91,48 @@ footer a {
 
 footer img {
     width: 60px;
+}
+
+@media screen and (max-width : 668px) {
+  header img {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width : 560px) {
+  header a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width : 536px) {
+  header {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  header img {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width : 450px) {
+    footer p, footer a {
+        font-size: 12px;
+    }
+  
+    footer img {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width : 340px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 
