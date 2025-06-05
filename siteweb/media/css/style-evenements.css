@@ -1,0 +1,16 @@
+article {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+main img {
+  border-radius: 10px;
+  max-width: 100%;
+}
