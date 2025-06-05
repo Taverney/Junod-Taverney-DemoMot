@@ -1,0 +1,19 @@
+/* ---------- main ---------- */
+p {
+    margin: 10px;
+}
+/* ----- galerie ----- */
+main > div {
+    gap: 5px;
+    display: flex;
+}
+main div div {
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+main img {
+    border-radius: 10px;
+    max-width: 100%;
+}
