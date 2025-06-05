@@ -4,6 +4,14 @@
     font-style: normal;
 }
 
+h1 {
+    text-align: center;
+    text-shadow: #569528 2px 2px 2px;
+    font-size: 50px;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+
 p, a {
     font-family: "Quicksand", sans-serif;
     font-style: normal;
@@ -20,6 +28,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 header img {    
