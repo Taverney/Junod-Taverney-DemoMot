@@ -1,16 +1,30 @@
 article {
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
+  margin-inline: 5px;
 }
 
 section {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 
 main img {
   border-radius: 10px;
   max-width: 100%;
+  margin: 2px;
+}
+
+main img {
+}
+
+.test {
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.test:active {
+  transform: scale(2);
 }
