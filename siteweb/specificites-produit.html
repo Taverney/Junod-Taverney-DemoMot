@@ -45,28 +45,32 @@
             <p>Des prix imbattables pour une qualité inégalée</p>
         </div>
         <div>
-            <p>Commander pour :</p>
             <form>
-                <label for="nbpers"></label>
-                <select name="nomber de personnes" id="nbpers">
-                    <option value="1">2 personnes</option>
-                    <option value="2">4 personnes</option>
-                    <option value="3">8 personnes</option>
-                </select>
                 <label for="quantite">Quantité :</label>
-                <input type="number" id="quantite" min="1" max="10" value="1">
+                <input type="number" id="quantite" min="1" value="1" onchange="calculPrix()">
             </form>
             <p>Prix unitaire : 5.50 € (c'est fixe pour le moment)</p>
-            <h3>Total : 5.50 € (dyamique plus tard, c'est du js pas du html)</h3>
+            <span id="total">Total : 5.50 €</span>
+
+            <!-- le script permet de modifier le total en fonction de la quantité -->
+            <script>
+                function calculPrix() {
+                    const prix = 5.50
+                    let inputContent = document.getElementById("quantite").value;
+                    document.getElementById("total").textContent= "Total : " + inputContent * prix;
+                }
+            </script>
+
         </div>
         <div>
             <h3>Mode de retrait :</h3>
-            <form>
+            <form action="./panier.html">
                 <fieldset>
-                    <label for="sur_place">Sur place</label>
-                    <input type="radio" id="sur_place">
-                    <label for="a_domicile">À domicile</label>
-                    <input type="radio" id="a_domicile">
+                    <input type="radio" id="sur_place" name="livraison" required>
+                    <label for="sur_place">Retirer en magasin</label>
+                    <input type="radio" id="a_domicile" name="livraison" required>
+                    <label for="a_domicile">Livraison à domicile (inclu frais de livraison)</label>
+                    <input type="submit" value="Ajouter au panier">
                 </fieldset>
             </form>
         </div>
