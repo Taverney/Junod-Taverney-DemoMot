@@ -12,7 +12,7 @@ h1 {
   margin-bottom: 40px;
 }
 
-p, a {
+p, a, label, input, textarea {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-size: 18px;
