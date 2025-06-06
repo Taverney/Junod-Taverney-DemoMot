@@ -1,21 +1,21 @@
 * {
-    margin : 0;
-    font-family: "Happy Monkey", system-ui;
-    font-style: normal;
+  margin : 0;
+  font-family: "Happy Monkey", system-ui;
+  font-style: normal;
 }
 
 h1 {
-    text-align: center;
-    text-shadow: #569528 2px 2px 2px;
-    font-size: 50px;
-    text-decoration: underline;
-    margin-bottom: 40px;
+  text-align: center;
+  text-shadow: #569528 2px 2px 2px;
+  font-size: 50px;
+  text-decoration: underline;
+  margin-bottom: 40px;
 }
 
 p, a {
-    font-family: "Quicksand", sans-serif;
-    font-style: normal;
-    font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 18px;
 }
 
 .vert{
@@ -23,33 +23,33 @@ p, a {
 }
 
 header {
-    background: #20993a;
-    padding: 25px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 25px;
+  background: #20993a;
+  padding: 25px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 header img {    
-    border-radius: 10px;
-    height: 80px;
+  border-radius: 10px;
+  height: 80px;
 }
 
 header img a {
-    height: 80px;
+  height: 80px;
 }
 
 nav {
-    margin: auto;
+  margin: auto;
 }
 
 nav ul {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 nav li {
@@ -66,31 +66,35 @@ nav a {
 }
 
 nav a:hover {
-    background: #187c15;
-    color: #ffffff;
+  background: #187c15;
+  color: #ffffff;
 }
 
 .self {
-    color: black;
-    background: #ffffff;
+  color: black;
+  background: #ffffff;
+}
+
+.borderimg {
+  border: 1px black solid;
 }
 
 footer {
-    background: linear-gradient(10deg, #20993a, #6e8373);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px  30px;
-    margin-top: 50px;
+  background: linear-gradient(10deg, #20993a, #6e8373);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px  30px;
+  margin-top: 50px;
 }
 
 footer a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 footer img {
-    width: 60px;
+  width: 60px;
 }
 
 @media screen and (max-width : 668px) {
@@ -122,7 +126,7 @@ footer img {
 
 @media screen and (max-width : 450px) {
     footer p, footer a {
-        font-size: 12px;
+      font-size: 12px;
     }
   
     footer img {
