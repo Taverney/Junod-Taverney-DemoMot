@@ -16,16 +16,15 @@ h1 + section p {
     margin: 0px;
 }
 h3 {
-    margin: 20px 0px 0px 0px;
+    margin-top: 20px;
 }
 /* ----- section 2 ----- */
 section:last-child > div {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-around;
     margin: 25px 0px;
-}
-section:last-child h3 {
-    text-align: center;
+    padding: 0px;
 }
 section:last-child img {
     max-width: 65%;
@@ -39,6 +38,7 @@ section:last-child img {
     justify-content: center;
     text-align: center;
 }
+/* alignement vertical */
 @media screen and (max-width: 768px){
     section:last-child > div {
         display: flex;
