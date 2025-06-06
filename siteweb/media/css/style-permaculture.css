@@ -1,0 +1,13 @@
+main h2, main p {
+    text-align: center;
+}
+/* gérer les images */
+main div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main div img {
+    max-width: 45%;
+    margin: 4px;
+}
