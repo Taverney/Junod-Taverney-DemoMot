@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+main img {
+  height: 180px;
+}
+
+@media screen and (max-width : 470px) {
+  main img {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width : 400px) {
+  main img {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width : 280px) {
+  main img {
+    height: 80px;
+  }
+}
+
