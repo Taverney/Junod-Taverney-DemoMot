@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site référence de patisseries françaises, bienvenue chez GuillomeFe">
     <meta name="keywords" content="patisseries françaises, chocolat, gâteaux, permaculture">
+
     <link href="./media/images/logosmall.png" rel="icon" type="image/png">
     <link rel="stylesheet" href="./media/css/style-general.css">
+    <link rel="stylesheet" href="./media/css/style-specificites.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Quicksand&display=swap" rel="stylesheet">
@@ -15,86 +18,91 @@
     <title>specificites - Guillome Fe</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="./index.html">
-                <img src="./media/images/logonew.png" alt="Logo du site, il est écrit GuillomeFe">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a class="self" href="./index.html">Accueil</a></li>
-                <li><a href="./patisseries.html">Patisseries</a></li>
-                <li><a href="./chocolats.html">Chocolats</a></li>
-                <li><a href="./gateaux.html">Gâteaux / Pièces montées</a></li>
-                <li><a href="./evenements.html">Evénements</a></li>
-                <li><a href="./permaculture.html">Permaculture</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./partenaires.html">Partenaires</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div>
-            <img src="./media/images/patisseries/patisserie2-1.png" alt="Image du produit choisi">
-        </div>
-        <div>
-            <h2>Gâteau aux fraises</h2>
-            <p>Des prix imbattables pour une qualité inégalée</p>
-        </div>
-        <div>
-            <form>
-                <label for="quantite">Quantité :</label>
-                <input type="number" id="quantite" min="1" value="1" onchange="calculPrix()">
-            </form>
-            <p>Prix unitaire : 5.50 € (c'est fixe pour le moment)</p>
-            <span id="total">Total : 5.50 €</span>
-
-            <!-- le script permet de modifier le total en fonction de la quantité -->
-            <script>
-                function calculPrix() {
-                    const prix = 5.50
-                    let inputContent = document.getElementById("quantite").value;
-                    document.getElementById("total").textContent= "Total : " + inputContent * prix + " €";
-                }
-            </script>
-
-        </div>
-        <div>
-            <h3>Mode de retrait :</h3>
-            <form action="./panier.html">
-                <fieldset>
-                    <input type="radio" id="sur_place" name="livraison" required>
-                    <label for="sur_place">Retirer en magasin</label>
-                    <input type="radio" id="a_domicile" name="livraison" required>
-                    <label for="a_domicile">Livraison à domicile (inclu frais de livraison)</label>
-                    <input type="submit" value="Ajouter au panier">
-                </fieldset>
-            </form>
-        </div>
-    </main>
-
-    <footer>
-        <div>
+    <div class="wrapper">
+        <header>
             <div>
-                <p>Téléphone :</p>
-                <a href="tel:0762659868">07 62 65 98 68</a>
+                <a href="./index.html">
+                    <img src="./media/images/logonew.png" alt="Logo du site, il est écrit GuillomeFe">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./patisseries.html">Patisseries</a></li>
+                    <li><a href="./chocolats.html">Chocolats</a></li>
+                    <li><a href="./gateaux.html">Gâteaux / Pièces montées</a></li>
+                    <li><a href="./evenements.html">Evénements</a></li>
+                    <li><a href="./permaculture.html">Permaculture</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./partenaires.html">Partenaires</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <div>
+                <img class="imgborder" title="image du produit" src="./media/images/specificites/image_produit.png" alt="Image du produit choisi">
             </div>
             <div>
-                <p>Mail :</p>
-                <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
+                <h2>Gâteau aux fraises</h2>
+                <p>
+                    Gâteau saveur fraises qui ravi tout le monde, grand classique de la patisserie, il est à la foix doux et sucré sans être écoeurant.
+                    <br><br>Des prix imbattables pour une qualité inégalée.
+                </p>
             </div>
-        </div>
-        <p>&copy 2024 - 2025 GUILLOMEFE</p>
-        <div>
-            <a href="https://www.instagram.com/guillomefe/">
-                <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
-            </a>
-            <a href="https://www.facebook.com/guillomefe/">
-                <img src="./media/images/facebook.png" alt="logo Fsacebook cliquable">
-            </a>
-        </div>
-    </footer>
+            <div>
+                <form>
+                    <label for="quantite">Quantité : </label>
+                    <input type="number" id="quantite" min="1" value="1" onchange="calculPrix()">
+                </form>
+                <p>Prix unitaire : 5.50 €</p>
+                <span id="total">Total : 5.50 €</span>
+    
+                <!-- le script permet de modifier le total en fonction de la quantité -->
+                <script>
+                    function calculPrix() {
+                        const prix = 5.50
+                        let inputContent = document.getElementById("quantite").value;
+                        document.getElementById("total").textContent= "Total : " + inputContent * prix + " €";
+                    }
+                </script>
+    
+            </div>
+            <div>
+                <h3>Mode de retrait :</h3>
+                <form action="./panier.html">
+                    <fieldset>
+                        <input type="radio" id="sur_place" name="livraison" required>
+                        <label for="sur_place">Retirer en magasin</label>
+                        <input type="radio" id="a_domicile" name="livraison" required>
+                        <label for="a_domicile">Livraison à domicile (inclu frais de livraison)</label>
+                        <input type="submit" value="Ajouter au panier">
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    
+        <footer>
+            <div>
+                <div>
+                    <p>Téléphone :</p>
+                    <a href="tel:0762659868">07 62 65 98 68</a>
+                </div>
+                <div>
+                    <p>Mail :</p>
+                    <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
+                </div>
+            </div>
+            <p>&copy 2024 - 2025 GUILLOMEFE</p>
+            <div>
+                <a href="https://www.instagram.com/guillomefe/">
+                    <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
+                </a>
+                <a href="https://www.facebook.com/guillomefe/">
+                    <img src="./media/images/facebook.png" alt="logo Fsacebook cliquable">
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

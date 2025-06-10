@@ -41,23 +41,28 @@
     <main>
         <h1>Les chocolats</h1>
         <h2>Nous vous proposons divers variantes de chocolats :</h2>
-        <img src="./media/images/chocolats/tarifs.png" alt="Images des tarifs pour les chocolats">
+        <img class="imgborder" src="./media/images/chocolats/tarifs.png" alt="Images des tarifs pour les chocolats">
 
         <div>
-            <img class="image" onclick="classAdd" src="./media/images/chocolats/chocolats1.png" alt="chocolats au cafés en forme de cadeaux">
-            <img src="./media/images/chocolats/chocolats2.png" alt="chocolats noirs garnis d'oranges confites">
-            <img src="./media/images/chocolats/chocolats3.png" alt="chocolats de tous types en forme de cadeaux organisés">            <img src="./media/images/chocolats/chocolats5.png" alt="sachets de chocolats prêt à être emportés">
-            <img src="./media/images/chocolats/chocolats7.png" alt="plaque de chocolat sur une grille avec inscription I love you">
-            <img src="./media/images/chocolats/chocolats6.png" alt="plaque de chocolats de diverses saveures">
-            <img src="./media/images/chocolats/chocolats4.png" alt="chocolats en forme de cadeau en désordre">
+            <img id="image1" onclick="change('image1')" src="./media/images/chocolats/chocolats1.png" alt="chocolats au cafés en forme de cadeaux">
+            <img id="image2" onclick="change('image2')" src="./media/images/chocolats/chocolats2.png" alt="chocolats noirs garnis d'oranges confites">
+            <img id="image3" onclick="change('image3')" src="./media/images/chocolats/chocolats3.png" alt="chocolats de tous types en forme de cadeaux organisés">            
+            <img id="image4" onclick="change('image4')" src="./media/images/chocolats/chocolats5.png" alt="sachets de chocolats prêt à être emportés">
+            <img id="image5" onclick="change('image5')" src="./media/images/chocolats/chocolats7.png" alt="plaque de chocolat sur une grille avec inscription I love you">
+            <img id="image6" onclick="change('image6')" src="./media/images/chocolats/chocolats6.png" alt="plaque de chocolats de diverses saveures">
+            <img id="image7" onclick="change('image7')" src="./media/images/chocolats/chocolats4.png" alt="chocolats en forme de cadeau en désordre">
+            <form>
+                <button id="close">Fermer</button>
+            </form>
         </div>
-
         <script>
-            function classAdd () {
-                document.getElementsByClassName("image").classAdd("agrandie");
+            function change(str) {
+                let id = str;
+                let item = document.getElementById(str);
+                item.classList.add("agrandie");
+                console.log("Event déclenché");
             }
         </script>
-
     </main>
 
     <footer>

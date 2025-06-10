@@ -48,14 +48,30 @@
         </p>
         <div>
             <div>
-                <img src="./media/images/permaculture/respect-nature1.png" alt="La belle saison est de retour, les groseilles se réveillent">
-                <img src="./media/images/permaculture/jardin-perso1.png" alt="Image du potager fait maison">
+                <img id="image1" onclick="change('image1')" src="./media/images/permaculture/respect-nature1.png" alt="La belle saison est de retour, les groseilles se réveillent">
+                <img id="image2" onclick="change('image2')" src="./media/images/permaculture/jardin-perso1.png" alt="Image du potager fait maison">
+                <form>
+                    <button class="closebutton">Fermer</button>
+                </form>
             </div>
             <div>
-                <img src="./media/images/permaculture/framboises-blanches.png" alt="Gâteau fait avec les framboises du jardin">
-                <img src="./media/images/permaculture/groseilles.png" alt="Barquette de groseilles">
+                <img id="image3" onclick="change('image3')" src="./media/images/permaculture/framboises-blanches.png" alt="Gâteau fait avec les framboises du jardin">
+                <img id="image4" onclick="change('image4')" src="./media/images/permaculture/groseilles.png" alt="Barquette de groseilles">
+                <form>
+                    <button class="closebutton">Fermer</button>
+                </form>
             </div>
         </div>
+
+        <script>
+            function change(str) {
+                let id = str;
+                let item = document.getElementById(str);
+                item.classList.add("agrandie");
+                console.log("Event déclenché");
+            }
+        </script>
+
     </main>
 
     <footer>

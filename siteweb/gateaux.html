@@ -43,35 +43,59 @@
         <section>
             <h2>Nous sommes disponibles pour vous accompagner dans vos événements familiaux et professionnels</h2>
             <div>
-                <img src="./media/images/gateau/donna_nessa.png" alt="Ingrédients du gâteau">
-                <img src="./media/images/gateau/le_fou_d-agrumes.png" alt="Ingrédients du gâteau">
-                <img src="./media/images/gateau/madame_de_pecan.png" alt="Ingrédients du gâteau">
-                <img src="./media/images/gateau/l-as_de_coeur.png" alt="Ingrédients du gâteau">
-                <img src="./media/images/gateau/l-eclat_gourmand.png" alt="Ingrédients du gâteau">
-                <img class="imgborder" src="./media/images/gateau/carte_traditions.png" alt="Carte des gâteaux traditionnels">
+                <img id="image1" onclick="change('image1')" src="./media/images/gateau/donna_nessa.png" alt="Ingrédients du gâteau">
+                <img id="image2" onclick="change('image2')" src="./media/images/gateau/le_fou_d-agrumes.png" alt="Ingrédients du gâteau">
+                <img id="image3" onclick="change('image3')" src="./media/images/gateau/madame_de_pecan.png" alt="Ingrédients du gâteau">
+                <img id="image4" onclick="change('image4')" src="./media/images/gateau/l-as_de_coeur.png" alt="Ingrédients du gâteau">
+                <img id="image5" onclick="change('image5')" src="./media/images/gateau/l-eclat_gourmand.png" alt="Ingrédients du gâteau">
+                <img id="image6" onclick="change('image6')" class="imgborder" src="./media/images/gateau/carte_traditions.png" alt="Carte des gâteaux traditionnels">
+                <form>
+                    <button class="closebutton">Fermer</button>
+                </form>
             </div>
         </section>
         <section>
             <h2>Voici en images à quoi ressemblents nos gâteaux et pièces montées</h2>
-            <div>
+            <div id="conteneur">
                 <div>
-                    <img src="./media/images/gateau/gateaux1-1.png" alt="Gâteaux présentés en cascade">
-                    <img src="./media/images/gateau/gateaux1-2.png" alt="Deux gâteaux garnis de macarons">
-                    <img src="./media/images/gateau/gateaux1-3.png" alt="Gâteaux garnis de chocolats en forme de tête de lapin">
+                    <img id="image7" onclick="change('image7')" src="./media/images/gateau/gateaux1-1.png" alt="Gâteaux présentés en cascade">
+                    <img id="image8" onclick="change('image8')" src="./media/images/gateau/gateaux1-2.png" alt="Deux gâteaux garnis de macarons">
+                    <img id="image9" onclick="change('image9')" src="./media/images/gateau/gateaux1-3.png" alt="Gâteaux garnis de chocolats en forme de tête de lapin">
+                    <form>
+                        <button class="closebutton">Fermer</button>
+                    </form>
                 </div>
                 <div>
-                    <img src="./media/images/gateau/gateaux2-1.png" alt="Pièce montée chataignes glacées au sucre">
-                    <img src="./media/images/gateau/gateaux2-2.png" alt="Vue agrandie sur le premier étage de la pièce montée seule">
-                    <img src="./media/images/gateau/gateaux2-3.png" alt="Gâteau parfaitement lisse servi pour un mariage">
+                    <img id="image10" onclick="change('image10')" src="./media/images/gateau/gateaux2-1.png" alt="Pièce montée chataignes glacées au sucre">
+                    <img id="image11" onclick="change('image11')" src="./media/images/gateau/gateaux2-2.png" alt="Vue agrandie sur le premier étage de la pièce montée seule">
+                    <img id="image12" onclick="change('image12')" src="./media/images/gateau/gateaux2-3.png" alt="Gâteau parfaitement lisse servi pour un mariage">
+                    <form>
+                        <button class="closebutton">Fermer</button>
+                    </form>
                 </div>
                 <div>
-                    <img src="./media/images/gateau/gateaux3-1.png" alt="Pièce montée, un carrousel décoré de chevaux figure par dessus">
-                    <img src="./media/images/gateau/gateaux3-2.png" alt="Pièce montée décorée avec des nuages et un hibou">
-                    <img src="./media/images/gateau/gateaux3-3.png" alt="Petits gâteaux et boissons sur un bar">
-                    <img src="./media/images/gateau/gateaux3-4.png" alt="Plein de patisseries servies sur plateaux">
+                    <img id="image13" onclick="change('image13')" src="./media/images/gateau/gateaux3-1.png" alt="Pièce montée, un carrousel décoré de chevaux figure par dessus">
+                    <img id="image14" onclick="change('image14')" src="./media/images/gateau/gateaux3-2.png" alt="Pièce montée décorée avec des nuages et un hibou">
+                    <img id="image15" onclick="change('image15')" src="./media/images/gateau/gateaux3-3.png" alt="Petits gâteaux et boissons sur un bar">
+                    <img id="image16" onclick="change('image16')" src="./media/images/gateau/gateaux3-4.png" alt="Plein de patisseries servies sur plateaux">
+                    <form>
+                        <button class="closebutton">Fermer</button>
+                    </form>
                 </div>
             </div>
         </section>
+
+        <script>
+            function change(str) {
+                let id = str;
+                let item = document.getElementById(str);
+                item.classList.add("agrandie");
+                console.log("Event déclenché");
+                document.getElementById("conteneur").style.display="block";
+                document.getElementById(str).style.minWidth="10%";
+            }
+        </script>
+
     </main>
 
     <footer>

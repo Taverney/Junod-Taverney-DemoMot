@@ -45,24 +45,45 @@
             <br>Disponible aussi en commande
             <br>COOKIES au tarif de 3.50 euros (cacahuètes, noisettes et chocolat)
         </p>
-        <div>
+        <div id="conteneur">
             <div>
-                <img src="./media/images/patisseries/patisserie1-1.png" alt="Cookies en masse avec fruits rouges">
-                <img src="./media/images/patisseries/patisserie1-2.png" alt="tartelettes aux mirabelles">
-                <img src="./media/images/patisseries/patisserie1-3.png" alt="différentes tartelettes joliment arrangées">
+                <img id="image1" onclick="change('image1')" src="./media/images/patisseries/patisserie1-1.png" alt="Cookies en masse avec fruits rouges">
+                <img id="image2" onclick="change('image2')" src="./media/images/patisseries/patisserie1-2.png" alt="tartelettes aux mirabelles">
+                <img id="image3" onclick="change('image3')" src="./media/images/patisseries/patisserie1-3.png" alt="différentes tartelettes joliment arrangées">
+                <form>
+                    <button class="closebutton">Fermer</button>
+                </form>
             </div>
             <div>
                 <a href="./specificites-produit.html">
                     <img src="./media/images/patisseries/patisserie2-1.png" alt="Un fraisier, le gâteau à la fraise">
                 </a>
-                <img src="./media/images/patisseries/patisserie2-2.png" alt="éclair avec coulis rouge dessus et tartelettes à côté">
-                <img src="./media/images/patisseries/patisserie2-3.png" alt="éclair avec chantilly">
-                <img src="./media/images/patisseries/patisserie2-4.png" alt="tartelette au citron et citron">
+                <img id="image5" onclick="change('image5')" src="./media/images/patisseries/patisserie2-2.png" alt="éclair avec coulis rouge dessus et tartelettes à côté">
+                <img id="image6" onclick="change('image6')" src="./media/images/patisseries/patisserie2-3.png" alt="éclair avec chantilly">
+                <img id="image7" onclick="change('image7')" src="./media/images/patisseries/patisserie2-4.png" alt="tartelette au citron et citron">
+                <form>
+                    <button class="closebutton">Fermer</button>
+                </form>
             </div>
             <div>
-                <img src="./media/images/patisseries/patisserie3-1.png" alt="tartelettes fraise">
-                <img src="./media/images/patisseries/patisserie3-2.png" alt="image de la vitrine de tartelettes">            </div>
+                <img id="image8" onclick="change('image8')" src="./media/images/patisseries/patisserie3-1.png" alt="tartelettes fraise">
+                <img id="image9" onclick="change('image9')" src="./media/images/patisseries/patisserie3-2.png" alt="image de la vitrine de tartelettes">
+                <form>
+                    <button class="closebutton">Fermer</button>
+                </form>
+            </div>
         </div>
+
+        <script>
+            function change(str) {
+                let id = str;
+                let item = document.getElementById(str);
+                item.classList.add("agrandie");
+
+                document.getElementById("conteneur").style.display="block";
+            }
+        </script>
+
     </main>
 
     <footer>

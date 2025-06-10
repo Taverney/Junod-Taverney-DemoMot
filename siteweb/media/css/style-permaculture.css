@@ -7,7 +7,35 @@ main div {
     flex-wrap: wrap;
     justify-content: center;
 }
+main div div {
+    width: 100%;
+}
 main div img {
     max-width: 45%;
     margin: 4px;
+}
+
+/* agrandir les image quand cliqué */
+form {
+    display: none;
+}
+.agrandie {
+    max-width: 100%;
+    height: 95%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+    border: 800px solid rgba(1, 1, 1, 0.65);    
+    border-bottom: 20px solid rgba(1, 1, 1, 0.65);
+}
+.agrandie ~ form {
+    display: inline;
+}
+.closebutton {
+    position: fixed;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 60px;
 }

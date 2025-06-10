@@ -18,7 +18,7 @@ h1 + section p {
 h3 {
     margin-top: 20px;
 }
-/* ----- section 2 ----- */
+/* ----- section 3 ----- */
 section:last-child > div {
     display: flex;
     flex-direction: row-reverse;
