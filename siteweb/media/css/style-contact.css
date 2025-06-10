@@ -1,12 +1,15 @@
-article {
-  margin: auto;
+.content {
+  display: flex;
+  gap: 150px;
+  align-items: start;
+  justify-content: center;
 }
 
 article {
   background: #277c3c;
   padding: 20px 30px;
   border-radius: 20px;
-  max-width: 400px;
+  width: 400px;
   margin-bottom: 50px;
 }
 
@@ -24,16 +27,13 @@ main p {
   color: #ffffff;
 }
 
-article {
-  width: 290px;
-}
-
 form {
+  width: 290px;
   margin: auto;
   margin-top: 25px;
 }
 
-main div {
+form div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
@@ -76,10 +76,43 @@ label {
   }
 }
 
-@media screen and (max-width : 350px) {
+@media screen and (max-width : 450px) {
   
   article{
-  margin-inline: 10px;
+  width: 350px;
+  }
+}
+
+@media screen and (max-width : 410px) {
+  
+  article{
+  width: 300px;
+  }
+}
+
+@media screen and (max-width : 360px) {
+  article {
+    width: 250px;
+  }
+
+  form {
+    width: 250px;
+  }
+
+  form div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width : 450px) {
+  
+  article{
+  width: 200px;
+  }
+
+  form {
+    width: 200px;
   }
 }
 
