@@ -8,6 +8,7 @@
     <meta name="keywords" content="patisseries françaises, chocolat, gâteaux, permaculture">
     <link href="./media/images/logosmall.png" rel="icon" type="image/png">
     <link rel="stylesheet" href="./media/css/style-general.css">
+    <link rel="stylesheet" href="./media/css/style-connexion-inscription.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Quicksand&display=swap" rel="stylesheet">
@@ -15,93 +16,104 @@
     <title>Connexion - Guillome Fe</title>
 </head>
 <body>
-    <header>
 
-        <div>
-            <a href="./index.html">
-                <img src="./media/images/logonew.png" alt="Logo du site, il est écrit Guillome Fe">
-            </a>
-        </div>
+    <div class="wrapper">
 
-        <nav>
-            <ul>
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a href="./patisseries.html">Patisseries</a></li>
-                <li><a href="./chocolats.html">Chocolats</a></li>
-                <li><a href="./gateaux.html">Gâteaux / Pièces montées</a></li>
-                <li><a href="./evenements.html">Evénements</a></li>
-                <li><a href="./permaculture.html">Permaculture</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./partenaires.html">Partenaires</a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <main>
-
-        <h1>S'inscrire</h1>
-
-        <article>
-
-            <form target="_self" action="./payement.html" method="post">
-
-                <div>
-                    <label for="email">Adresse-mail</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div>
-                    <label for="password">Mot de passe</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-
-                <div>
-                    <label for="passwordconfirm">Confirmez le mot de passe</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-
-                <div>
-                    <input type="submit" name="submit" value="S'inscrire">
-                </div>
-
-            </form>
-
-        </article>
-
-    </main>
-
-    <footer>
-        
-        <div>
+        <header>
 
             <div>
-                <p>Téléphone :</p>
-                <a href="tel:0762659868">07 62 65 98 68</a>
+                <a href="./index.html">
+                    <img src="./media/images/logonew.png" alt="Logo du site, il est écrit Guillome Fe">
+                </a>
             </div>
+
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./patisseries.html">Patisseries</a></li>
+                    <li><a href="./chocolats.html">Chocolats</a></li>
+                    <li><a href="./gateaux.html">Gâteaux / Pièces montées</a></li>
+                    <li><a href="./evenements.html">Evénements</a></li>
+                    <li><a href="./permaculture.html">Permaculture</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./partenaires.html">Partenaires</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <h1>S'inscrire</h1>
+
+            <article>
+
+                <form target="_self" action="./payement.html" method="post">
+
+                    <div>
+                        <label for="email">Adresse-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <div>
+                        <label for="passwordconfirm">Confirmation</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <div>
+                        <input class="button" type="submit" name="submit" value="S'inscrire">
+                    </div>
+
+                </form>
+
+            </article>
+
+            <article>
+
+                <a href="./connexion.html">J'ai déjà un compte</a>
+
+            </article>
+
+        </main>
+
+        <footer>
             
             <div>
-                <p>Mail :</p>
-                <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
+
+                <div>
+                    <p>Téléphone :</p>
+                    <a href="tel:0762659868">07 62 65 98 68</a>
+                </div>
+                
+                <div>
+                    <p>Mail :</p>
+                    <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
+                </div>
+
             </div>
 
-        </div>
+            <p>&copy 2024 - 2025 GUILLOMEFE</p>
 
-        <p>&copy 2024 - 2025 GUILLOMEFE</p>
+            <div>
 
-        <div>
+                <a href="https://www.instagram.com/guillomefe/">
+                    <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
+                </a>
 
-            <a href="https://www.instagram.com/guillomefe/">
-                <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
-            </a>
+                <a href="https://www.facebook.com/guillomefe/">
+                    <img src="./media/images/facebook.png" alt="logo Fsacebook cliquable">
+                </a>
+                
+            </div>
 
-            <a href="https://www.facebook.com/guillomefe/">
-                <img src="./media/images/facebook.png" alt="logo Fsacebook cliquable">
-            </a>
-            
-        </div>
+        </footer>
 
-    </footer>
+    </div>
 
 </body>
 </html>

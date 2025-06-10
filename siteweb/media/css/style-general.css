@@ -4,6 +4,21 @@
   font-style: normal;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  background: #bfe2b8;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 h1 {
   text-align: center;
   text-shadow: #569528 2px 2px 2px;
@@ -14,12 +29,11 @@ h1 {
 
 p, a, label, input, textarea {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-size: 18px;
 }
 
 .vert{
-    color: #569528;
+  color: #569528;
 }
 
 header {
@@ -80,7 +94,7 @@ nav a:hover {
 }
 
 footer {
-  background: linear-gradient(10deg, #20993a, #6e8373);
+  background: #20993a;
   display: flex;
   justify-content: space-between;
   align-items: center;
