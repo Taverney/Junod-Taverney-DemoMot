@@ -56,8 +56,8 @@
         </section>
         <section>
             <h2>Voici en images à quoi ressemblents nos gâteaux et pièces montées</h2>
-            <div class="conteneur">
-                <div>
+            <div id="conteneur">
+                <div id="badflex">
                     <img id="image7" onclick="change('image7')" src="./media/images/gateau/gateaux1-1.png" alt="Gâteaux présentés en cascade">
                     <img id="image8" onclick="change('image8')" src="./media/images/gateau/gateaux1-2.png" alt="Deux gâteaux garnis de macarons">
                     <img id="image9" onclick="change('image9')" src="./media/images/gateau/gateaux1-3.png" alt="Gâteaux garnis de chocolats en forme de tête de lapin">
@@ -65,7 +65,7 @@
                         <button class="closebutton"></button>
                     </form>
                 </div>
-                <div>
+                <div class="badflex">
                     <img id="image10" onclick="change('image10')" src="./media/images/gateau/gateaux2-1.png" alt="Pièce montée chataignes glacées au sucre">
                     <img id="image11" onclick="change('image11')" src="./media/images/gateau/gateaux2-2.png" alt="Vue agrandie sur le premier étage de la pièce montée seule">
                     <img id="image12" onclick="change('image12')" src="./media/images/gateau/gateaux2-3.png" alt="Gâteau parfaitement lisse servi pour un mariage">
@@ -73,7 +73,7 @@
                         <button class="closebutton"></button>
                     </form>
                 </div>
-                <div>
+                <div class="badflex">
                     <img id="image13" onclick="change('image13')" src="./media/images/gateau/gateaux3-1.png" alt="Pièce montée, un carrousel décoré de chevaux figure par dessus">
                     <img id="image14" onclick="change('image14')" src="./media/images/gateau/gateaux3-2.png" alt="Pièce montée décorée avec des nuages et un hibou">
                     <img id="image15" onclick="change('image15')" src="./media/images/gateau/gateaux3-3.png" alt="Petits gâteaux et boissons sur un bar">
@@ -89,6 +89,8 @@
             function change(id) {
                 document.getElementById(id).classList.add("agrandie");
                 document.getElementById("modale").classList.add("fond");
+                document.getElementById("conteneur").classList.add("unflex");
+                document.getElementById("badflex").style.display="block";
             }
         </script>
         <div id="modale"></div>
