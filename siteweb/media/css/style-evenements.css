@@ -1,19 +1,18 @@
 article {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-inline: 5px;
+  gap: 14px;
+  margin-inline: 10px;
 }
 
 section {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
 }
 
 main img {
   border-radius: 10px;
   max-width: 100%;
-  margin: 2px;
 }
 
