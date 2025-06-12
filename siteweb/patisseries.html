@@ -75,14 +75,13 @@
         </div>
 
         <script>
-            function change(str) {
-                let id = str;
-                let item = document.getElementById(str);
-                item.classList.add("agrandie");
-
-                document.getElementById("conteneur").style.display="block";
+            function change(id) {
+                document.getElementById(id).classList.add("agrandie");
+                document.getElementById("modale").classList.add("active");
+                document.getElementById("conteneur").classList.add("unflex");
             }
         </script>
+        <div id="modale"></div>
 
     </main>
 

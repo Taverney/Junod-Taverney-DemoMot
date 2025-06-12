@@ -42,9 +42,8 @@
         <h1>Permaculture</h1>
         <h2>Chez Guillome Fe, nous respectons la nature</h2>
         <p>
-            Nous pouvons tous s'engager pour l'evironnement et chaque action compte.
-            <br>Nous avons choisis de participer à ce combat
-            <br>en utilisant des produits cultivés par nous-mêmes et en limitant le gaspillage.
+            Nous pouvons tous s'engager pour l'environnement et chaque action compte.
+            <br>Nous avons choisis de participer à ce combat en utilisant des produits cultivés par nous-mêmes et en limitant le gaspillage.
         </p>
         <div>
             <div>
@@ -64,13 +63,12 @@
         </div>
 
         <script>
-            function change(str) {
-                let id = str;
-                let item = document.getElementById(str);
-                item.classList.add("agrandie");
-                console.log("Event déclenché");
+            function change(id) {
+                document.getElementById(id).classList.add("agrandie");
+                document.getElementById("modale").classList.add("active");
             }
         </script>
+        <div id="modale"></div>
 
     </main>
 
@@ -85,7 +83,7 @@
                 <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
             </div>
         </div>
-        <p>&copy 2024 - 2025 GUILLOMEFE</p>
+        <p>&copy; 2024 - 2025 GUILLOMEFE</p>
         <div>
             <a href="https://www.instagram.com/guillomefe/">
                 <img src="./media/images/instagram.png" alt="logo Instagram cliquable">

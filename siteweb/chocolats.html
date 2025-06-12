@@ -51,18 +51,18 @@
             <img id="image5" onclick="change('image5')" src="./media/images/chocolats/chocolats7.png" alt="plaque de chocolat sur une grille avec inscription I love you">
             <img id="image6" onclick="change('image6')" src="./media/images/chocolats/chocolats6.png" alt="plaque de chocolats de diverses saveures">
             <img id="image7" onclick="change('image7')" src="./media/images/chocolats/chocolats4.png" alt="chocolats en forme de cadeau en désordre">
-            <form>
-                <button id="close">Fermer</button>
+            <form class="closeform">
+                <button class="closebutton"></button>
             </form>
         </div>
         <script>
-            function change(str) {
-                let id = str;
-                let item = document.getElementById(str);
-                item.classList.add("agrandie");
-                console.log("Event déclenché");
+            function change(id) {
+                document.getElementById(id).classList.add("agrandie");
+                document.getElementById("modale").classList.add("active");
             }
         </script>
+        <div id="modale"></div>
+
     </main>
 
     <footer>
@@ -76,7 +76,7 @@
                 <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
             </div>
         </div>
-        <p>&copy 2024 - 2025 GUILLOMEFE</p>
+        <p>&copy; 2024 - 2025 GUILLOMEFE</p>
         <div>
             <a href="https://www.instagram.com/guillomefe/">
                 <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
