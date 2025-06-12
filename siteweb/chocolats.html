@@ -10,6 +10,7 @@
     <link href="./media/images/logosmall.png" rel="icon" type="image/png">
     <link rel="stylesheet" href="./media/css/style-general.css">
     <link rel="stylesheet" href="./media/css/style-chocolats.css">
+    <script src="./media/javascript/dynamisme.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,25 +45,21 @@
         <img class="imgborder" src="./media/images/chocolats/tarifs.png" alt="Images des tarifs pour les chocolats">
 
         <div>
-            <img id="image1" onclick="change('image1')" src="./media/images/chocolats/chocolats1.png" alt="chocolats au cafés en forme de cadeaux">
-            <img id="image2" onclick="change('image2')" src="./media/images/chocolats/chocolats2.png" alt="chocolats noirs garnis d'oranges confites">
-            <img id="image3" onclick="change('image3')" src="./media/images/chocolats/chocolats3.png" alt="chocolats de tous types en forme de cadeaux organisés">            
-            <img id="image4" onclick="change('image4')" src="./media/images/chocolats/chocolats5.png" alt="sachets de chocolats prêt à être emportés">
-            <img id="image5" onclick="change('image5')" src="./media/images/chocolats/chocolats7.png" alt="plaque de chocolat sur une grille avec inscription I love you">
-            <img id="image6" onclick="change('image6')" src="./media/images/chocolats/chocolats6.png" alt="plaque de chocolats de diverses saveures">
-            <img id="image7" onclick="change('image7')" src="./media/images/chocolats/chocolats4.png" alt="chocolats en forme de cadeau en désordre">
-            <form class="closeform">
-                <button class="closebutton"></button>
-            </form>
+            <img id="image1" onclick="showbig('./media/images/chocolats/chocolats1.png')" src="./media/images/chocolats/chocolats1.png" alt="chocolats au cafés en forme de cadeaux">
+            <img id="image2" onclick="showbig('./media/images/chocolats/chocolats2.png')" src="./media/images/chocolats/chocolats2.png" alt="chocolats noirs garnis d'oranges confites">
+            <img id="image3" onclick="showbig('./media/images/chocolats/chocolats3.png')" src="./media/images/chocolats/chocolats3.png" alt="chocolats de tous types en forme de cadeaux organisés">            
+            <img id="image4" onclick="showbig('./media/images/chocolats/chocolats5.png')" src="./media/images/chocolats/chocolats5.png" alt="sachets de chocolats prêt à être emportés">
+            <img id="image5" onclick="showbig('./media/images/chocolats/chocolats7.png')" src="./media/images/chocolats/chocolats7.png" alt="plaque de chocolat sur une grille avec inscription I love you">
+            <img id="image6" onclick="showbig('./media/images/chocolats/chocolats6.png')" src="./media/images/chocolats/chocolats6.png" alt="plaque de chocolats de diverses saveures">
+            <img id="image7" onclick="showbig('./media/images/chocolats/chocolats4.png')" src="./media/images/chocolats/chocolats4.png" alt="chocolats en forme de cadeau en désordre">
         </div>
         
-        <script>
-            function change(id) {
-                document.getElementById(id).classList.add("agrandie");
-                document.getElementById("modale").classList.add("fond");
-            }
-        </script>
-        <div id="modale"></div>
+        <div id="modale" class="hidden">
+            <img id="bigimage" class="hidden" src="./media/images/test.png" alt="image en grand">
+        </div>
+        <form id="close" action="javascript:;" onsubmit=" hide()" class="closeform hidden">
+            <input id="button" type="submit" class="hidden">
+        </form>
 
     </main>
 
