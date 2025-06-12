@@ -21,7 +21,7 @@ body {
 
 h1 {
   text-align: center;
-  text-shadow: #569528 2px 2px 2px;
+  text-shadow: #3f9452 2px 2px 2px;
   font-size: 50px;
   text-decoration: underline;
   margin-bottom: 40px;
@@ -33,7 +33,7 @@ p, a, label, input, textarea {
 }
 
 .vert{
-  color: #569528;
+  color: #20993a;
 }
 
 header {
@@ -104,12 +104,18 @@ main img {
 }
 
 footer {
-  background: #20993a;
+  background: #209952;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px  30px;
+  padding: 20px  30px;
   margin-top: 50px;
+}
+
+footer > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 footer a {
@@ -119,6 +125,11 @@ footer a {
 
 footer img {
   width: 60px;
+}
+
+.medias {
+  display: flex;
+  gap: 10px;
 }
 
 @media screen and (max-width : 668px) {
@@ -175,6 +186,7 @@ footer img {
   z-index: 1;
   border: 1px white solid;
 }
+
 /* le fond en noir */
 .fond {
   background-color: black;
@@ -183,14 +195,17 @@ footer img {
   height: 100%;
   width: 100%;
 }
+
 /* form invisible normalement */
 .closeform {
   display: none;
 }
+
 /* form visible si clic */
 .agrandie ~ .closeform {
   display: inline;
 }
+
 /* le bouton si clic */
 .closebutton {
   position: fixed;
@@ -202,7 +217,9 @@ footer img {
   color: rgba(255, 255, 255, 0);
   background-color: rgba(255, 255, 255, 0);
 }
+
 /* si flexbox gêne */
 .unflex {
   display: block;
 }
+
