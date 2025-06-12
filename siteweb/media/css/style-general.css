@@ -165,10 +165,6 @@ footer img {
 }
 
 /* ----- agrandir les image quand cliqué ----- */
-/* form invisible normalement */
-.closeform {
-    display: none;
-}
 /* l'image cliquée */
 .agrandie {
   max-width: 90%;
@@ -176,28 +172,32 @@ footer img {
   position: fixed;
   bottom: 30px;
   z-index: 1;
+  border: 1px white solid;
 }
 /* le fond en noir */
-.active {
+.fond {
+  background-color: black;
   position: fixed;
   top: 0px;
   height: 100%;
   width: 100%;
-  background-color: black;
 }
-/* visible si clic */
+/* form invisible normalement */
+.closeform {
+  display: none;
+}
+/* form visible si clic */
 .agrandie ~ .closeform {
   display: inline;
 }
 /* le bouton si clic */
 .closebutton {
   position: fixed;
-  z-index: 2;
   top: 0px;
-  right: 0px;
-  width: 100%;
+  left: 0px;
   height: 100%;
+  width: 100%;
+  z-index: 2;
   color: rgba(255, 255, 255, 0);
   background-color: rgba(255, 255, 255, 0);
 }
- 
