@@ -18,6 +18,27 @@ h1 + section p {
 h3 {
     margin-top: 20px;
 }
+/* ----- section 2 ----- */
+section:nth-child(3) {
+    margin: 30px 0px;
+    padding: 10px 0px;
+    text-align: center;
+    border-top: 2px green dotted;   
+    border-bottom: 2px green dotted;
+}
+section:nth-child(3) h3:nth-child(2) {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background: linear-gradient(10deg ,#ca21e0, #81adff);
+}
+section:nth-child(3) h3:nth-child(2):active {
+    transform: scale(1.10);
+}
+section:nth-child(3) h3:nth-child(2):hover {
+    cursor: pointer;
+}
 /* ----- section 3 ----- */
 section:last-child > div {
     display: flex;

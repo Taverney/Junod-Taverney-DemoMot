@@ -18,80 +18,113 @@
     <title>Permaculture - Guillome Fe</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="./index.html">
-                <img src="./media/images/logonew.png" alt="Logo du site, il est écrit GuillomeFe">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a href="./patisseries.html">Patisseries</a></li>
-                <li><a href="./chocolats.html">Chocolats</a></li>
-                <li><a href="./gateaux.html">Gâteaux / Pièces montées</a></li>
-                <li><a href="./evenements.html">Evénements</a></li>
-                <li><a class="self" href="./permaculture.html">Permaculture</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./partenaires.html">Partenaires</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Permaculture</h1>
-        <h2>Chez Guillome Fe, nous respectons la nature</h2>
-        <p>
-            Nous pouvons tous s'engager pour l'environnement et chaque action compte.
-            <br>Nous avons choisis de participer à ce combat en utilisant des produits cultivés par nous-mêmes et en limitant le gaspillage.
-        </p>
-        <div>
+    <div class="wrapper">
+        <header>
             <div>
-                <img id="image1" onclick="change('image1')" src="./media/images/permaculture/respect-nature1.png" alt="La belle saison est de retour, les groseilles se réveillent">
-                <img id="image2" onclick="change('image2')" src="./media/images/permaculture/jardin-perso1.png" alt="Image du potager fait maison">
-                <form class="closeform">
-                    <button class="closebutton"></button>
-                </form>
+                <a href="./index.html">
+                    <img src="./media/images/logonew.png" alt="Logo du site, il est écrit GuillomeFe">
+                </a>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./patisseries.html">Patisseries</a></li>
+                    <li><a href="./chocolats.html">Chocolats</a></li>
+                    <li><a href="./gateaux.html">Gâteaux / Pièces montées</a></li>
+                    <li><a href="./evenements.html">Evénements</a></li>
+                    <li><a class="self" href="./permaculture.html">Permaculture</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./partenaires.html">Partenaires</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <h1>Permaculture</h1>
+            <h2>Chez Guillome Fe, nous respectons la nature</h2>
+            <p>
+                Nous pouvons tous s'engager pour l'environnement et chaque action compte.
+                <br>Nous avons choisis de participer à ce combat en utilisant des produits cultivés par nous-mêmes et en limitant le gaspillage.
+            </p>
             <div>
-                <img id="image3" onclick="change('image3')" src="./media/images/permaculture/framboises-blanches.png" alt="Gâteau fait avec les framboises du jardin">
-                <img id="image4" onclick="change('image4')" src="./media/images/permaculture/groseilles.png" alt="Barquette de groseilles">
-                <form class="closeform">
-                    <button class="closebutton"></button>
-                </form>
+                <div>
+                    <img id="image1" onclick="showbig('./media/images/permaculture/respect-nature1.png')" src="./media/images/permaculture/respect-nature1.png" alt="La belle saison est de retour, les groseilles se réveillent">
+                    <img id="image2" onclick="showbig('./media/images/permaculture/jardin-perso1.png')" src="./media/images/permaculture/jardin-perso1.png" alt="Image du potager fait maison">
+                </div>
+                <div>
+                    <img id="image3" onclick="showbig('./media/images/permaculture/framboises-blanches.png')" src="./media/images/permaculture/framboises-blanches.png" alt="Gâteau fait avec les framboises du jardin">
+                    <img id="image4" onclick="showbig('./media/images/permaculture/groseilles.png')" src="./media/images/permaculture/groseilles.png" alt="Barquette de groseilles">
+                </div>
             </div>
-        </div>
+    
+            <script>
+                function showbig(link) {
+                    let image = document.getElementById("bigimage");
+                    image.src=link;
+                    image.classList.replace("hidden", "shown");
+                    image.classList.add("agrandie");
+                    
+                    let conteneur = document.getElementById("modale");
+                    conteneur.classList.add("fond");
+                    conteneur.classList.replace("hidden", "shown");
+    
+                    let formulaire = document.getElementById("close");
+                    formulaire.classList.replace("hidden", "shown");
+    
+                    let bouton = document.getElementById("button");
+                    bouton.classList.replace("hidden", "shown");
+                    bouton.classList.add("closebutton");
+                }
 
-        <script>
-            function change(id) {
-                document.getElementById(id).classList.add("agrandie");
-                document.getElementById("modale").classList.add("fond");
-            }
-        </script>
-        <div id="modale"></div>
+                function hide() {
+                    let image = document.getElementById("bigimage");
+                    image.classList.replace("shown", "hidden");
+                    image.classList.remove("agrandie");
+                    
+                    let conteneur = document.getElementById("modale");
+                    conteneur.classList.remove("fond");
+                    conteneur.classList.replace("shown", "hidden");
+    
+                    let formulaire = document.getElementById("close");
+                    formulaire.classList.replace("shown", "hidden");
+    
+                    let bouton = document.getElementById("button");
+                    bouton.classList.replace("shown", "hidden");
+                    bouton.classList.remove("closebutton");
+                }
+            </script>
 
-    </main>
+            <div id="modale" class="hidden">
+                <img id="bigimage" class="hidden" src="./media/images/test.png" alt="image en grand">
 
-    <footer>
-        <div>
+            </div>
+            <form id="close" action="javascript:;" onsubmit=" hide()" class="closeform hidden">
+                <input id="button" type="submit" class="hidden">
+            </form>
+
+        </main>
+    
+        <footer>
             <div>
-                <p>Téléphone :</p>
-                <a href="tel:0762659868">07 62 65 98 68</a>
+                <div>
+                    <p>Téléphone :</p>
+                    <a href="tel:0762659868">07 62 65 98 68</a>
+                </div>
+                <div>
+                    <p>Mail :</p>
+                    <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
+                </div>
             </div>
+            <p>&copy; 2024 - 2025 GUILLOMEFE</p>
             <div>
-                <p>Mail :</p>
-                <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
+                <a href="https://www.instagram.com/guillomefe/">
+                    <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
+                </a>
+                <a href="https://www.facebook.com/guillomefe/">
+                    <img src="./media/images/facebook.png" alt="logo Facebook cliquable">
+                </a>
             </div>
-        </div>
-        <p>&copy; 2024 - 2025 GUILLOMEFE</p>
-        <div class="medias">
-            <a href="https://www.instagram.com/guillomefe/">
-                <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
-            </a>
-            <a href="https://www.facebook.com/guillomefe/">
-                <img src="./media/images/facebook.png" alt="logo Facebook cliquable">
-            </a>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

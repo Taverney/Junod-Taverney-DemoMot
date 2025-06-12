@@ -60,9 +60,30 @@
                 <br>Disponible pour tous vos événements (particuliers/professionnels) avec possibilité de préparer des buffets salés/sucrés
             </p>
         </section>
-        <section>
-            <h2>J'aimerais vous aider, mais je ne sais pas quoi prendre...</h2>
-            <h3 id="recommendation"></h3>
+        <section onmousedown="return false" onselectstart="return false">
+            <h2>Je ne sais pas quoi prendre, il y a trop de choix...</h2>
+            <h3 onclick="generation()">J'aimerais une suggestion</h3>
+            <h3 id="recommandation"></h3>
+
+            <script>
+                function generation() {
+                    let suggestion = document.getElementById("recommandation");
+                    let numero = Math.floor(Math.random() * 10);
+                    const possibilites = [
+                    "Le 🍓Fraisier🍓 en vaut la peine, aimé de tous, il vous plaîra sûrement",
+                    "Peut-être un sandwich pour les 4 heures ? Tomate-mozarella ?🍅🧀",
+                    "Un anniversaire ? Vous êtes au bon endroit, notre forêt noire ravis les grands comme les petits 🎂🎁",
+                    "Une pièce montée est toujours belle à offrir, votre copain/copine sera contente.",
+                    "Faites des heureux avec du chocolat 🍫😋 !",
+                    "Nos macarons sont les meilleurs 😉",
+                    "Personne ne résite aux bûches de noël 🎄🎄",
+                    "Qui a dit que les éclairs étaient délicieux 🤷‍♂️ ?? C'est parfaitement vrai 😆",
+                    "Plutôt mirabelles, fraises, myrtilles, pommes, euh..., poires, citron, ...euh... pour la suite il faut venir sur place",
+                    "Crèmes brûlées faites sur demande 🍮 et aussi bonnes que votre imagination puisse l'imaginer 🤔"
+                    ]
+                    suggestion.textContent = possibilites[numero];
+                }
+            </script>
         </section>
         <section>
             <div>
@@ -96,12 +117,12 @@
             </div>
         </div>
         <p>&copy; 2024 - 2025 GUILLOMEFE</p>
-        <div>
+        <div class="medias">
             <a href="https://www.instagram.com/guillomefe/">
                 <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
             </a>
             <a href="https://www.facebook.com/guillomefe/">
-                <img src="./media/images/facebook.png" alt="logo Fsacebook cliquable">
+                <img src="./media/images/facebook.png" alt="logo Facebook cliquable">
             </a>
         </div>
     </footer>
