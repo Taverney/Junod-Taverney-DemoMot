@@ -17,30 +17,3 @@ main img {
   margin: 2px;
 }
 
-.resize {
-  width: 200px;
-  height: auto;
-  cursor: zoom-in;
-  transition: transform 0.3s ease;
-}
-
-#overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.8);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-#overlay img {
-  max-width: 90vw;
-  max-height: 90vh;
-  cursor: zoom-out;
-  box-shadow: 0 0 20px rgba(255,255,255,0.2);
-  border-radius: 10px;
-}
-
