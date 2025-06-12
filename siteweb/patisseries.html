@@ -10,6 +10,7 @@
     <link href="./media/images/logosmall.png" rel="icon" type="image/png">
     <link rel="stylesheet" href="./media/css/style-general.css">
     <link rel="stylesheet" href="./media/css/style-patisseries.css">
+    <script src="./media/javascript/dynamisme.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,41 +48,30 @@
         </p>
         <article id="conteneur">
             <section>
-                <img id="image1" onclick="change('image1')" src="./media/images/patisseries/patisserie1-1.png" alt="Cookies en masse avec fruits rouges">
-                <img id="image2" onclick="change('image2')" src="./media/images/patisseries/patisserie1-2.png" alt="tartelettes aux mirabelles">
-                <img id="image3" onclick="change('image3')" src="./media/images/patisseries/patisserie1-3.png" alt="différentes tartelettes joliment arrangées">
-                <!-- <form>
-                    <button class="closebutton">Fermer</button>
-                </form> -->
+                <img id="image1" onclick="showbig('./media/images/patisseries/patisserie1-1.png')" src="./media/images/patisseries/patisserie1-1.png" alt="Cookies en masse avec fruits rouges">
+                <img id="image2" onclick="showbig('./media/images/patisseries/patisserie1-2.png')" src="./media/images/patisseries/patisserie1-2.png" alt="tartelettes aux mirabelles">
+                <img id="image3" onclick="showbig('./media/images/patisseries/patisserie1-3.png')" src="./media/images/patisseries/patisserie1-3.png" alt="différentes tartelettes joliment arrangées">
             </section>
             <section>
                 <a href="./specificites-produit.html">
                     <img src="./media/images/patisseries/patisserie2-1.png" alt="Un fraisier, le gâteau à la fraise">
                 </a>
-                <img id="image5" onclick="change('image5')" src="./media/images/patisseries/patisserie2-2.png" alt="éclair avec coulis rouge dessus et tartelettes à côté">
-                <img id="image6" onclick="change('image6')" src="./media/images/patisseries/patisserie2-3.png" alt="éclair avec chantilly">
-                <img id="image7" onclick="change('image7')" src="./media/images/patisseries/patisserie2-4.png" alt="tartelette au citron et citron">
-                <!-- <form>
-                    <button class="closebutton">Fermer</button>
-                </form> -->
+                <img id="image5" onclick="showbig('./media/images/patisseries/patisserie2-2.png')" src="./media/images/patisseries/patisserie2-2.png" alt="éclair avec coulis rouge dessus et tartelettes à côté">
+                <img id="image6" onclick="showbig('./media/images/patisseries/patisserie2-3.png')" src="./media/images/patisseries/patisserie2-3.png" alt="éclair avec chantilly">
+                <img id="image7" onclick="showbig('./media/images/patisseries/patisserie2-4.png')" src="./media/images/patisseries/patisserie2-4.png" alt="tartelette au citron et citron">
             </section>
             <section>
-                <img id="image8" onclick="change('image8')" src="./media/images/patisseries/patisserie3-1.png" alt="tartelettes fraise">
-                <img id="image9" onclick="change('image9')" src="./media/images/patisseries/patisserie3-2.png" alt="image de la vitrine de tartelettes">
-                <!-- <form class="closeform">
-                    <button class="closebutton">Fermer</button>
-                </form> -->
+                <img id="image8" onclick="showbig('./media/images/patisseries/patisserie3-1.png')" src="./media/images/patisseries/patisserie3-1.png" alt="tartelettes fraise">
+                <img id="image9" onclick="showbig('./media/images/patisseries/patisserie3-2.png')" src="./media/images/patisseries/patisserie3-2.png" alt="image de la vitrine de tartelettes">
             </section>
         </article>
 
-        <!-- <script>
-            function change(id) {
-                document.getElementById(id).classList.add("agrandie");
-                document.getElementById("modale").classList.add("active");
-                document.getElementById("conteneur").classList.add("unflex");
-            }
-        </script> -->
-        <div id="modale"></div>
+        <div id="modale" class="hidden">
+            <img id="bigimage" class="hidden" src="./media/images/test.png" alt="image en grand">
+        </div>
+        <form id="close" action="javascript:;" onsubmit=" hide()" class="closeform hidden">
+            <input id="button" type="submit" class="hidden">
+        </form>
 
     </main>
 
