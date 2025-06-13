@@ -10,6 +10,7 @@
     <link href="./media/images/logosmall.png" rel="icon" type="image/png">
     <link rel="stylesheet" href="./media/css/style-general.css">
     <link rel="stylesheet" href="./media/css/style-accueil.css">
+    <script src="./media/javascript/dynamisme.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,9 +42,9 @@
     <main>
 
         <h1>Accueil</h1>
-        <section>
+        <section id="presentation">
             <h2>Artisan Pâtissier-Chocolatier-Confiseur</h2>
-            <img src="./media/images/accueil/details-guillome.png" alt="détails que donne Guillome à propos de son entreprise">
+            <img onclick="showbig('./media/images/accueil/details-guillome.png')" src="./media/images/accueil/details-guillome.png" alt="détails que donne Guillome à propos de son entreprise">
             <h3 class="vert">Pas de compromis avec la gourmandise</h3>
             <p>
                 La particularité de cette entreprise, c'est qu'elle s'engage de manière durable pour l'environnement,
@@ -60,7 +61,7 @@
                 <br>Disponible pour tous vos événements (particuliers/professionnels) avec possibilité de préparer des buffets salés/sucrés
             </p>
         </section>
-        <section onmousedown="return false" onselectstart="return false">
+        <section id="idees" onmousedown="return false" onselectstart="return false">
             <h2>Je ne sais pas quoi prendre, il y a trop de choix...</h2>
             <h3 onclick="generation()">J'aimerais une suggestion</h3>
             <h3 id="recommandation"></h3>
@@ -86,8 +87,8 @@
             </script>
         </section>
         <section>
-            <div>
-                <img class="imgborder" src="./media/images/accueil/snacking.png" alt="image de sandwichs tomate-oeufs-charcuterie et suppléments">
+            <article id="snacking">
+                <img onclick="showbig('./media/images/accueil/snacking.png')" class="imgborder" src="./media/images/accueil/snacking.png" alt="image de sandwichs tomate-oeufs-charcuterie et suppléments">
                 <div class="texte-cote">
                     <h3>Snacking</h3>
                     <p>
@@ -97,12 +98,20 @@
                         <br>des sandwichs, des salades, des pizzas...🥗🥪🍕
                     </p>
                 </div>
-            </div>
-            <div>
+            </article>
+            <article id="fidelite">
                 <h3 class="texte-cote">Votre fidélité compte pour nous ! 😉😊</h3>
-                <img class="imgborder" src="./media/images/accueil/carte-fidelite.png" alt="photo de la carte de fidélité, une remise de 10% vous est offerte après 10 achats">
-            </div>
+                <img onclick="showbig('./media/images/accueil/carte-fidelite.png')" class="imgborder" src="./media/images/accueil/carte-fidelite.png" alt="photo de la carte de fidélité, une remise de 10% vous est offerte après 10 achats">
+            </article>
         </section>
+
+        <div id="modale" class="hidden">
+            <img id="bigimage" class="hidden" src="./media/images/test.png" alt="image en grand">
+        </div>
+        <form id="close" action="javascript:;" onsubmit=" hide()" class="closeform hidden">
+            <input id="button" type="submit" class="hidden">
+        </form>
+
     </main>
 
     <footer>
