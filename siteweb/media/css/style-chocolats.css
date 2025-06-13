@@ -28,4 +28,7 @@ main > img {
         max-height: 600px;
         min-width: 0px;
     }
+    .larger {
+        min-width: 45%;
+    }
 }
