@@ -4,9 +4,11 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
 main p {
   margin: 10px;
 }
+
 /* ----- galerie ----- */
 article {
   display: flex;
@@ -21,12 +23,9 @@ section {
   gap: 14px;
 }
 
-main a {
-  height: 261px;
-}
-
 main img {
   border-radius: 10px;
   max-width: 100%;
+  display: block;
 }
 
