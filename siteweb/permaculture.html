@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site référence de patisseries françaises, bienvenue chez GuillomeFe">
-    <meta name="keywords" content="patisseries françaises, chocolat, gâteaux, permaculture">
+    <meta name="keywords" content="patisseries françaises, permaculture, respect de la nature, gâteaux fait maison avec des produits locaux">
 
     <link href="./media/images/logosmall.png" rel="icon" type="image/png">
     <link rel="stylesheet" href="./media/css/style-general.css">
     <link rel="stylesheet" href="./media/css/style-permaculture.css">
+    <script src="./media/javascript/dynamisme.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,54 +49,17 @@
             </p>
             <div>
                 <div>
-                    <img id="image1" onclick="showbig('./media/images/permaculture/respect-nature1.png')" src="./media/images/permaculture/respect-nature1.png" alt="La belle saison est de retour, les groseilles se réveillent">
-                    <img id="image2" onclick="showbig('./media/images/permaculture/jardin-perso1.png')" src="./media/images/permaculture/jardin-perso1.png" alt="Image du potager fait maison">
+                    <img onclick="showbig('./media/images/permaculture/respect-nature1.png')" src="./media/images/permaculture/respect-nature1.png" alt="La belle saison est de retour, les groseilles se réveillent">
+                    <img onclick="showbig('./media/images/permaculture/jardin-perso1.png')" src="./media/images/permaculture/jardin-perso1.png" alt="Image du potager fait maison">
                 </div>
                 <div>
-                    <img id="image3" onclick="showbig('./media/images/permaculture/framboises-blanches.png')" src="./media/images/permaculture/framboises-blanches.png" alt="Gâteau fait avec les framboises du jardin">
-                    <img id="image4" onclick="showbig('./media/images/permaculture/groseilles.png')" src="./media/images/permaculture/groseilles.png" alt="Barquette de groseilles">
+                    <img onclick="showbig('./media/images/permaculture/framboises-blanches.png')" src="./media/images/permaculture/framboises-blanches.png" alt="Gâteau fait avec les framboises du jardin">
+                    <img onclick="showbig('./media/images/permaculture/groseilles.png')" src="./media/images/permaculture/groseilles.png" alt="Barquette de groseilles">
                 </div>
             </div>
-    
-            <script>
-                function showbig(link) {
-                    let image = document.getElementById("bigimage");
-                    image.src=link;
-                    image.classList.replace("hidden", "shown");
-                    image.classList.add("agrandie");
-                    
-                    let conteneur = document.getElementById("modale");
-                    conteneur.classList.add("fond");
-                    conteneur.classList.replace("hidden", "shown");
-    
-                    let formulaire = document.getElementById("close");
-                    formulaire.classList.replace("hidden", "shown");
-    
-                    let bouton = document.getElementById("button");
-                    bouton.classList.replace("hidden", "shown");
-                    bouton.classList.add("closebutton");
-                }
-
-                function hide() {
-                    let image = document.getElementById("bigimage");
-                    image.classList.replace("shown", "hidden");
-                    image.classList.remove("agrandie");
-                    
-                    let conteneur = document.getElementById("modale");
-                    conteneur.classList.remove("fond");
-                    conteneur.classList.replace("shown", "hidden");
-    
-                    let formulaire = document.getElementById("close");
-                    formulaire.classList.replace("shown", "hidden");
-    
-                    let bouton = document.getElementById("button");
-                    bouton.classList.replace("shown", "hidden");
-                    bouton.classList.remove("closebutton");
-                }
-            </script>
 
             <div id="modale" class="hidden">
-                <img id="bigimage" class="hidden" src="./media/images/test.png" alt="image en grand">
+                <img id="bigimage" class="hidden" src="./media/images/replacable-image.png" alt="image en grand">
 
             </div>
             <form id="close" action="javascript:;" onsubmit=" hide()" class="closeform hidden">

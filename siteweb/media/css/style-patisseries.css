@@ -21,8 +21,11 @@ section {
   gap: 14px;
 }
 
-main a img {
-  display: block;
+main a {
+  height: 261px;
+}
+
+main img {
   border-radius: 10px;
   max-width: 100%;
 }

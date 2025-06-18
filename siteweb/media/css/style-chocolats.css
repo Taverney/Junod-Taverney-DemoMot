@@ -22,6 +22,11 @@ main img {
 main > img {
     margin: 20px;
 }
+.larger {
+    min-width: 55%;
+    width: 55%;
+    max-width: 60%;
+}
 
 @media screen and (min-width: 1024px) {
     main img {

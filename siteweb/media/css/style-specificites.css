@@ -16,7 +16,19 @@ img {
 }
 div:first-child {
     padding: 0;
+}
+fieldset {
+    display: grid;
+    grid-template-columns: 15px 1fr;
+    gap: 10px;
     border: none;
+}
+fieldset input:last-child {
+    grid-column: 1 / span 2;
+    margin: 0px 80px;
+}
+#modale {
+    margin: 0px;
 }
 
 @media screen and (max-width: 678px) {
