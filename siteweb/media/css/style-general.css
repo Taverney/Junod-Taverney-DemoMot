@@ -194,6 +194,7 @@ footer img {
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0px;
+  left: 0px;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -221,4 +222,8 @@ footer img {
   color: rgba(255, 255, 255, 0);
   background-color: rgba(255, 255, 255, 0);
 }
-
+@media screen and (max-width: 768px) {
+  .agrandie {
+    height: auto;
+  }
+}

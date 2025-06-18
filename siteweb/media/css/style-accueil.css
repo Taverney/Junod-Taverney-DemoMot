@@ -59,12 +59,12 @@ section:nth-child(4) img {
 }
 /* alignement vertical */
 @media screen and (max-width: 768px){
-    section:last-child > div {
+    section:nth-child(4) article {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    section:last-child img {
-        max-width: 80%;
+    section:nth-child(4) img {
+        max-width: 40%;
     }
 }
