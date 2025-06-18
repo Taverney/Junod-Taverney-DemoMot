@@ -7,8 +7,6 @@
 
 main img {
   height: 180px;
-}main img:hover {
-  cursor: default;
 }
 
 @media screen and (max-width : 470px) {
