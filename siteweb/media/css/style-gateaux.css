@@ -16,6 +16,11 @@ main section img {
 main section:nth-child(2) img {
     min-width: 10%;
 }
+.larger {
+    min-width: 55%;
+    width: 55%;
+    max-width: 60%;
+}
 /* section 2 */
 section:nth-child(3) div div {
     max-width: 30%;
