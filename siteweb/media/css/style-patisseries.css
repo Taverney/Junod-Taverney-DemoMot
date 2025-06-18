@@ -1,11 +1,11 @@
 /* ---------- main ---------- */
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 main p {
-    margin: 10px;
+  margin: 10px;
 }
 /* ----- galerie ----- */
 article {
@@ -22,11 +22,11 @@ section {
 }
 
 main a {
-    height: 261px;
+  height: 261px;
 }
 
 main img {
-    border-radius: 10px;
-    max-width: 100%;
+  border-radius: 10px;
+  max-width: 100%;
 }
 

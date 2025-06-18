@@ -16,7 +16,10 @@ img {
 }
 div:first-child {
     padding: 0;
-    border: none;
+    /* border: none; */
+}
+#modale {
+    margin: 0px;
 }
 
 @media screen and (max-width: 678px) {
