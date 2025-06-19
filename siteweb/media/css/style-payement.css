@@ -1,4 +1,4 @@
-article {
+form {
   display: flex;
   flex-direction: column;
   width: 230px;
@@ -13,11 +13,10 @@ margin-bottom: 10px;
 border-radius: 4px;
 border: 1px solid #5f5f5f;
 }
-
-button {
+/* bouton payer */
+input:last-child {
   margin: auto;
   margin-top: 15px;
-  width: 230px;
   border: 0px;
   border-radius: 4px;
   background: #20993a;
@@ -25,9 +24,7 @@ button {
   width: 100%;
   height: 35px;
 }
-
-button:hover {
+input:last-child:hover {
   cursor: pointer;
   background: #19b326;
 }
-
