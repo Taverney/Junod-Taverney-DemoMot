@@ -1,38 +1,41 @@
+/* ----- de manière générale ----- */
 * {
   margin : 0;
   font-family: "Quicksand", sans-serif;
 }
-
 html {
   height: 100%;
 }
-
 body {
   background: #bfe2b8;
   height: 100%;
 }
 
+@media screen and (max-width : 340px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+/* pour que le footer soit en bas */
 .wrapper {
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
-
+/* texte */
 h1 {
   text-align: center;
   font-size: 50px;
   text-decoration: underline;
   margin-bottom: 40px;
 }
-
 p, a, label, input, textarea, button {
   font-size: 18px;
 }
-
 .vert{
   color: #569528;
 }
-
+/* ---------- header ---------- */
 header {
   background: #20993a;
   padding: 25px 40px;
@@ -41,25 +44,42 @@ header {
   justify-content: space-between;
   margin-bottom: 25px;
 }
-
+/* logo centré verticalement */
 header div {
   display: flex;
   align-items: center;
 }
-
 header div a {
   height: 80px;
 }
-
-header img {    
+/* les 3 logos (Guillome Fe, panier, compte) */
+header div img {    
   border-radius: 10px;
   height: 80px;
 }
+/* les 2 autres logos */
+header div:last-child a:first-child {
+  margin-right: 10px;
+}
 
+@media screen and (max-width : 560px) {
+  header a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width : 536px) {
+  header {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  nav {
+    justify-content: center;
+  }
+}
+/* ----- nav ----- */
 nav {
   margin: auto;
 }
-
 nav ul {
   display: flex;
   gap: 25px;
@@ -67,12 +87,10 @@ nav ul {
   flex-wrap: wrap;
   padding: 0;
 }
-
-nav li {
+nav ul li {
   list-style: none;
 }
-
-nav a {
+nav ul li a {
   color: white;
   text-decoration: none;
   padding-inline: 20px;
@@ -80,17 +98,45 @@ nav a {
   background: #54b850;
   border-radius: 10px;
 }
-
+/* effets quand on passe la souris + si page active */
 nav a:hover {
   background: #187c15;
   color: #ffffff;
 }
-
 .self {
   color: black;
-  background: #ffffff;
+  background: #fff;
 }
 
+@media screen and (max-width: 1023px) {
+  header  {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 20px;
+  }
+  /* la nav change de place */
+  header nav {
+    grid-row-start: 2;
+    grid-column: 1 / 3;
+  }
+  /* centrer les logos compte et panier */
+  header div:last-child a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width : 425px) {
+  header div a,
+  header div a img {
+    height: 50px;
+  }
+  header div:last-child img {
+    height: 40px;
+  }
+}
+
+/* ---------- main ---------- */
 main img {
   border-radius: 10px;
   max-width: 100%;
@@ -113,6 +159,8 @@ footer {
   margin-top: 50px;
 }
 
+
+/* ---------- footer ---------- */
 footer > div:first-child {
   display: flex;
   flex-direction: column;
@@ -133,33 +181,6 @@ footer img {
   width: 60px;
 }
 
-@media screen and (max-width : 668px) {
-  header img {
-    height: 50px;
-  }
-}
-
-@media screen and (max-width : 560px) {
-  header a {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width : 536px) {
-  header {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    justify-content: center;
-  }
-
-  header img {
-    margin-bottom: 20px;
-  }
-}
-
 @media screen and (max-width : 500px) {
   footer p, footer a {
     font-size: 12px;
@@ -174,11 +195,7 @@ footer img {
   }
 }
 
-@media screen and (max-width : 340px) {
-  h1 {
-    font-size: 40px;
-  }
-}
+
 
 /* ----- agrandir les images quand cliquées ----- */
 /* image invisible normalement */
