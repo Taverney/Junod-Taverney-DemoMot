@@ -10,6 +10,7 @@ main div {
     padding: 10px;
     margin: 15px;
 }
+/* partie 1 avec image */
 img {
     border-radius: 10px;
     height: 100%;
@@ -17,6 +18,7 @@ img {
 div:first-child {
     padding: 0;
 }
+/* partie 4 avec mode de retrait */
 fieldset {
     display: grid;
     grid-template-columns: 15px 1fr;
@@ -27,6 +29,7 @@ fieldset input:last-child {
     grid-column: 1 / span 2;
     margin: 0px 80px;
 }
+/* div cachée pour agrandir l'image */
 #modale {
     margin: 0px;
 }

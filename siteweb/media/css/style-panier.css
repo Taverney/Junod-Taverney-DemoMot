@@ -2,7 +2,7 @@ h2 {
   text-align: center;
   margin-bottom: 15px;
 }
-
+/* ----- main ----- */
 section {
   padding: 20px;
   border: 2px solid #a1a1a1;
@@ -10,40 +10,44 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-inline: 5%;
-  margin-bottom: 20px;
+  margin: 0px 5% 20px;
 }
-
 section div {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-
+/* image */
+main img {
+  width: 120px;
+  max-width: 60%;
+}
+/* qté et prix */
 section p:last-child {
   font-weight: bold;
 }
-
-input {
-  width: 50px;
+@media screen and (max-width : 425px) {
+  section div:last-child {
+    flex-direction: column;
+  }
 }
-
-main img {
-  width: 120px;
+/* qté */
+input {
+  width: 35px;
 }
 
 #total {
   justify-self: end;
   margin-right: 5%;
 }
-
+/* liens en dessous */
 article > div:last-child {
   margin-top: 25px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 80px;
 }
-
 main a {
   color: #ffffff;
   text-decoration: none;
@@ -51,7 +55,6 @@ main a {
   padding: 10px;
   border-radius: 4px;
 }
-
 main a:hover {
   background: #19b326;
 }
@@ -60,21 +63,4 @@ main a:hover {
   article > div:last-child {
     gap: 20px;
   }
-
-  main img {
-    width: 100px;
-  }
 }
-
-@media screen and (max-width : 425px) {
-  section div:last-child {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width : 395px) {
-  main div:last-child {
-    flex-wrap: wrap;
-  }
-}
-
