@@ -1,18 +1,18 @@
+/* conteneur d'images */
 article {
   display: flex;
   justify-content: center;
   gap: 14px;
   margin-inline: 10px;
 }
-
+/* colonnes d'images */
 section {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-
+/* les images */
 main img {
   border-radius: 10px;
   max-width: 100%;
 }
-
