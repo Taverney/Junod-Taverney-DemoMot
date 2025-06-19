@@ -18,129 +18,131 @@
     <title>Accueil - Guillome Fe</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="./index.html">
-                <img src="./media/images/logonew.png" alt="Logo du site, il est écrit Guillome Fe">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a class="self" href="./index.html">Accueil</a></li>
-                <li><a href="./patisseries.html">Pâtisseries</a></li>
-                <li><a href="./chocolats.html">Chocolats</a></li>
-                <li><a href="./gateaux.html">Gâteaux / Pièces montées</a></li>
-                <li><a href="./evenements.html">Evénements</a></li>
-                <li><a href="./permaculture.html">Permaculture</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./partenaires.html">Partenaires</a></li>
-            </ul>
-        </nav>
-        <div>
-            <a href="./panier.html">
-                <img src="./media/images/panier.png" alt="logo d'un caddie, mène vers vos achats">
-            </a>
-            <a href="./connexion.html">
-                <img src="./media/images/compte.png" alt="logo d'un compte, mne vers la page de connexion">
-            </a>
-        </div>
-    </header>
+    <div class="wrapper">
+        <header>
+            <div>
+                <a href="./index.html">
+                    <img src="./media/images/logonew.png" alt="Logo du site, il est écrit Guillome Fe">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="self" href="./index.html">Accueil</a></li>
+                    <li><a href="./patisseries.html">Pâtisseries</a></li>
+                    <li><a href="./chocolats.html">Chocolats</a></li>
+                    <li><a href="./gateaux.html">Gâteaux / Pièces montées</a></li>
+                    <li><a href="./evenements.html">Evénements</a></li>
+                    <li><a href="./permaculture.html">Permaculture</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./partenaires.html">Partenaires</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="./panier.html">
+                    <img src="./media/images/panier.png" alt="logo d'un caddie, mène vers vos achats">
+                </a>
+                <a href="./connexion.html">
+                    <img src="./media/images/compte.png" alt="logo d'un compte, mne vers la page de connexion">
+                </a>
+            </div>
+        </header>
 
-    <main>
+        <main>
 
-        <h1>Accueil</h1>
-        <section id="presentation">
-            <h2>Artisan Pâtissier-Chocolatier-Confiseur</h2>
-            <img onclick="showbig('./media/images/accueil/details-guillome.png')" src="./media/images/accueil/details-guillome.png" alt="détails que donne Guillome à propos de son entreprise">
-            <h3 class="vert">Pas de compromis avec la gourmandise</h3>
-            <p>
-                La particularité de cette entreprise, c'est qu'elle s'engage de manière durable pour l'environnement,
-                <br>en limitant les déchets et en faisant une complète utilisation des matières premières.
-            </p>
-            <h3 class="vert">Produits proposés :</h3>
-            <p>
-                La pâtisserie-chocolaterie Guillome Fe vous propose des chocolats, gâteaux et autres articles de confiseries,
-                <br>en vente directe et sur commande.
-                <br>Suivant la saison, des chocolats/macarons/pâtes de fruits/petits sablés pourront être préparés. 😋😋
-                <br>Chaque produit est conçu avec soin et vous profiterez du savoir-faire de l'équipe d'artisans.
-                <br>Dépôt de pains et viennoiseries. 🥐
-                <br><br>Gâteaux à partir de 4 personnes sur commande uniquement, 72h à l'avance.
-                <br>Disponible pour tous vos événements (particuliers/professionnels) avec possibilité de préparer des buffets salés/sucrés
-            </p>
-        </section>
-        <section id="idees" onmousedown="return false" onselectstart="return false">
-            <h2>Je ne sais pas quoi prendre, il y a trop de choix...</h2>
-            <h3 onclick="generation()">J'aimerais une suggestion</h3>
-            <h3 id="recommandation"></h3>
+            <h1>Accueil</h1>
+            <section id="presentation">
+                <h2>Artisan Pâtissier-Chocolatier-Confiseur</h2>
+                <img onclick="showbig('./media/images/accueil/details-guillome.png')" src="./media/images/accueil/details-guillome.png" alt="détails que donne Guillome à propos de son entreprise">
+                <h3 class="vert">Pas de compromis avec la gourmandise</h3>
+                <p>
+                    La particularité de cette entreprise, c'est qu'elle s'engage de manière durable pour l'environnement,
+                    <br>en limitant les déchets et en faisant une complète utilisation des matières premières.
+                </p>
+                <h3 class="vert">Produits proposés :</h3>
+                <p>
+                    La pâtisserie-chocolaterie Guillome Fe vous propose des chocolats, gâteaux et autres articles de confiseries,
+                    <br>en vente directe et sur commande.
+                    <br>Suivant la saison, des chocolats/macarons/pâtes de fruits/petits sablés pourront être préparés. 😋😋
+                    <br>Chaque produit est conçu avec soin et vous profiterez du savoir-faire de l'équipe d'artisans.
+                    <br>Dépôt de pains et viennoiseries. 🥐
+                    <br><br>Gâteaux à partir de 4 personnes sur commande uniquement, 72h à l'avance.
+                    <br>Disponible pour tous vos événements (particuliers/professionnels) avec possibilité de préparer des buffets salés/sucrés
+                </p>
+            </section>
+            <section id="idees" onmousedown="return false" onselectstart="return false">
+                <h2>Je ne sais pas quoi prendre, il y a trop de choix...</h2>
+                <h3 onclick="generation()">J'aimerais une suggestion</h3>
+                <h3 id="recommandation"></h3>
 
-            <script>
-                function generation() {
-                    let suggestion = document.getElementById("recommandation");
-                    let numero = Math.floor(Math.random() * 10);
-                    const possibilites = [
-                    "Le 🍓Fraisier🍓 en vaut la peine, aimé de tous, il vous plaîra sûrement",
-                    "Peut-être un sandwich pour les 4 heures ? Tomate-mozarella ?🍅🧀",
-                    "Un anniversaire ? Vous êtes au bon endroit, notre forêt noire ravis les grands comme les petits 🎂🎁",
-                    "Une pièce montée est toujours belle à offrir, votre copain/copine sera contente.",
-                    "Faites des heureux avec du chocolat 🍫😋 !",
-                    "Nos macarons sont les meilleurs 😉",
-                    "Personne ne résite aux bûches de noël 🎄🎄",
-                    "Qui a dit que les éclairs étaient délicieux 🤷‍♂️ ?? C'est parfaitement vrai 😆",
-                    "Tartelettes plutôt mirabelles, fraises, myrtilles, pommes, euh..., poires, citron, ...euh... pour la suite il faut venir sur place",
-                    "Crèmes brûlées faites sur demande 🍮 et aussi bonnes que votre imagination puisse l'imaginer 🤔"
-                    ]
-                    suggestion.textContent = possibilites[numero];
-                }
-            </script>
-        </section>
-        <section>
-            <article id="snacking">
-                <img onclick="showbig('./media/images/accueil/snacking.png')" class="imgborder" src="./media/images/accueil/snacking.png" alt="image de sandwichs tomate-oeufs-charcuterie et suppléments">
-                <div class="texte-cote">
-                    <h3>Snacking</h3>
-                    <p>
-                        Nous disposons d'une terasse qui vous permettra de déguster une pâtisserie,
-                        <br>un croissant accompagné d'une boisson chaude ou froide
-                        <br>Nous vous proposons aussi un espace snacking à la boutique avec la possibilité de déguster des quiches,
-                        <br>des sandwichs, des salades, des pizzas...🥗🥪🍕
-                    </p>
+                <script>
+                    function generation() {
+                        let suggestion = document.getElementById("recommandation");
+                        let numero = Math.floor(Math.random() * 10);
+                        const possibilites = [
+                        "Le 🍓Fraisier🍓 en vaut la peine, aimé de tous, il vous plaîra sûrement",
+                        "Peut-être un sandwich pour les 4 heures ? Tomate-mozarella ?🍅🧀",
+                        "Un anniversaire ? Vous êtes au bon endroit, notre forêt noire ravis les grands comme les petits 🎂🎁",
+                        "Une pièce montée est toujours belle à offrir, votre copain/copine sera contente.",
+                        "Faites des heureux avec du chocolat 🍫😋 !",
+                        "Nos macarons sont les meilleurs 😉",
+                        "Personne ne résite aux bûches de noël 🎄🎄",
+                        "Qui a dit que les éclairs étaient délicieux 🤷‍♂️ ?? C'est parfaitement vrai 😆",
+                        "Tartelettes plutôt mirabelles, fraises, myrtilles, pommes, euh..., poires, citron, ...euh... pour la suite il faut venir sur place",
+                        "Crèmes brûlées faites sur demande 🍮 et aussi bonnes que votre imagination puisse l'imaginer 🤔"
+                        ]
+                        suggestion.textContent = possibilites[numero];
+                    }
+                </script>
+            </section>
+            <section>
+                <article id="snacking">
+                    <img onclick="showbig('./media/images/accueil/snacking.png')" class="imgborder" src="./media/images/accueil/snacking.png" alt="image de sandwichs tomate-oeufs-charcuterie et suppléments">
+                    <div class="texte-cote">
+                        <h3>Snacking</h3>
+                        <p>
+                            Nous disposons d'une terasse qui vous permettra de déguster une pâtisserie,
+                            <br>un croissant accompagné d'une boisson chaude ou froide
+                            <br>Nous vous proposons aussi un espace snacking à la boutique avec la possibilité de déguster des quiches,
+                            <br>des sandwichs, des salades, des pizzas...🥗🥪🍕
+                        </p>
+                    </div>
+                </article>
+                <article id="fidelite">
+                    <h3 class="texte-cote">Votre fidélité compte pour nous ! 😉😊</h3>
+                    <img onclick="showbig('./media/images/accueil/carte-fidelite.png')" class="imgborder" src="./media/images/accueil/carte-fidelite.png" alt="photo de la carte de fidélité, une remise de 10% vous est offerte après 10 achats">
+                </article>
+            </section>
+
+            <div id="modale" class="hidden">
+                <img id="bigimage" class="hidden" src="./media/images/replacable-image.png" alt="image en grand">
+            </div>
+            <form id="close" action="javascript:;" onsubmit=" hide()" class="closeform hidden">
+                <input id="button" type="submit" class="hidden">
+            </form>
+
+        </main>
+
+        <footer>
+            <div>
+                <div>
+                    <p>Téléphone :</p>
+                    <a href="tel:0762659868">07 62 65 98 68</a>
                 </div>
-            </article>
-            <article id="fidelite">
-                <h3 class="texte-cote">Votre fidélité compte pour nous ! 😉😊</h3>
-                <img onclick="showbig('./media/images/accueil/carte-fidelite.png')" class="imgborder" src="./media/images/accueil/carte-fidelite.png" alt="photo de la carte de fidélité, une remise de 10% vous est offerte après 10 achats">
-            </article>
-        </section>
-
-        <div id="modale" class="hidden">
-            <img id="bigimage" class="hidden" src="./media/images/replacable-image.png" alt="image en grand">
-        </div>
-        <form id="close" action="javascript:;" onsubmit=" hide()" class="closeform hidden">
-            <input id="button" type="submit" class="hidden">
-        </form>
-
-    </main>
-
-    <footer>
-        <div>
-            <div>
-                <p>Téléphone :</p>
-                <a href="tel:0762659868">07 62 65 98 68</a>
+                <div>
+                    <p>Mail :</p>
+                    <a href="mailto:guillomefe@gmail.com ">guillomefe@gmail.com </a>
+                </div>
             </div>
-            <div>
-                <p>Mail :</p>
-                <a href="mailto:guillomefe@gmail.com ">guillomefe@gmail.com </a>
+            <p>&copy; 2024 - 2025 GUILLOMEFE</p>
+            <div class="medias">
+                <a href="https://www.instagram.com/guillomefe/">
+                    <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
+                </a>
+                <a href="https://www.facebook.com/guillomefe/">
+                    <img src="./media/images/facebook.png" alt="logo Facebook cliquable">
+                </a>
             </div>
-        </div>
-        <p>&copy; 2024 - 2025 GUILLOMEFE</p>
-        <div class="medias">
-            <a href="https://www.instagram.com/guillomefe/">
-                <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
-            </a>
-            <a href="https://www.facebook.com/guillomefe/">
-                <img src="./media/images/facebook.png" alt="logo Facebook cliquable">
-            </a>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

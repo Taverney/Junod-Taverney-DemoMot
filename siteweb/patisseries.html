@@ -18,90 +18,92 @@
     <title>Pâtisseries - Guillome Fe</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="./index.html">
-                <img src="./media/images/logonew.png" alt="Logo du site, il est écrit Guillome Fe">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a class="self" href="./patisseries.html">Pâtisseries</a></li>
-                <li><a href="./chocolats.html">Chocolats</a></li>
-                <li><a href="./gateaux.html">Gâteaux / Pièces montées</a></li>
-                <li><a href="./evenements.html">Evénements</a></li>
-                <li><a href="./permaculture.html">Permaculture</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./partenaires.html">Partenaires</a></li>
-            </ul>
-        </nav>
-        <div>
-            <a href="./panier.html">
-                <img src="./media/images/panier.png" alt="logo d'un caddie, mène vers vos achats">
-            </a>
-            <a href="./connexion.html">
-                <img src="./media/images/compte.png" alt="logo d'un compte, mne vers la page de connexion">
-            </a>
-        </div>
-    </header>
-
-    <main>
-        <h1>Pâtisseries</h1>
-        <p>
-            Nous vous proposons, en magasin, diverses pâtisseries 
-            <br>Disponible aussi en commande
-            <br>COOKIES au tarif de 3.50 euros (cacahuètes, noisettes et chocolat)
-        </p>
-        <article>
-            <section>
-                <img onclick="showbig('./media/images/patisseries/patisserie1-1.png')" src="./media/images/patisseries/patisserie1-1.png" alt="Cookies en masse avec fruits rouges">
-                <img onclick="showbig('./media/images/patisseries/patisserie1-2.png')" src="./media/images/patisseries/patisserie1-2.png" alt="tartelettes aux mirabelles">
-                <img onclick="showbig('./media/images/patisseries/patisserie1-3.png')" src="./media/images/patisseries/patisserie1-3.png" alt="différentes tartelettes joliment arrangées">
-            </section>
-            <section>
-                <a href="./specificites-produit.html">
-                    <img src="./media/images/patisseries/patisserie2-1.png" alt="Un fraisier, le gâteau à la fraise">
+    <div class="wrapper">
+        <header>
+            <div>
+                <a href="./index.html">
+                    <img src="./media/images/logonew.png" alt="Logo du site, il est écrit Guillome Fe">
                 </a>
-                <img onclick="showbig('./media/images/patisseries/patisserie2-2.png')" src="./media/images/patisseries/patisserie2-2.png" alt="éclair avec coulis rouge dessus et tartelettes à côté">
-                <img onclick="showbig('./media/images/patisseries/patisserie2-3.png')" src="./media/images/patisseries/patisserie2-3.png" alt="éclair avec chantilly">
-                <img onclick="showbig('./media/images/patisseries/patisserie2-4.png')" src="./media/images/patisseries/patisserie2-4.png" alt="tartelette au citron et citron">
-            </section>
-            <section>
-                <img onclick="showbig('./media/images/patisseries/patisserie3-1.png')" src="./media/images/patisseries/patisserie3-1.png" alt="tartelettes fraise">
-                <img onclick="showbig('./media/images/patisseries/patisserie3-2.png')" src="./media/images/patisseries/patisserie3-2.png" alt="image de la vitrine de tartelettes">
-            </section>
-        </article>
-
-        <div id="modale" class="hidden">
-            <img id="bigimage" class="hidden" src="./media/images/replacable-image.png" alt="image en grand">
-        </div>
-        <form id="close" action="javascript:;" onsubmit=" hide()" class="closeform hidden">
-            <input id="button" type="submit" class="hidden">
-        </form>
-
-    </main>
-
-    <footer>
-        <div>
-            <div>
-                <p>Téléphone :</p>
-                <a href="tel:0762659868">07 62 65 98 68</a>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a class="self" href="./patisseries.html">Pâtisseries</a></li>
+                    <li><a href="./chocolats.html">Chocolats</a></li>
+                    <li><a href="./gateaux.html">Gâteaux / Pièces montées</a></li>
+                    <li><a href="./evenements.html">Evénements</a></li>
+                    <li><a href="./permaculture.html">Permaculture</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./partenaires.html">Partenaires</a></li>
+                </ul>
+            </nav>
             <div>
-                <p>Mail :</p>
-                <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
+                <a href="./panier.html">
+                    <img src="./media/images/panier.png" alt="logo d'un caddie, mène vers vos achats">
+                </a>
+                <a href="./connexion.html">
+                    <img src="./media/images/compte.png" alt="logo d'un compte, mne vers la page de connexion">
+                </a>
             </div>
-        </div>
-        <p>&copy; 2024 - 2025 GUILLOMEFE</p>
-        <div>
-            <a href="https://www.instagram.com/guillomefe/">
-                <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
-            </a>
-            <a href="https://www.facebook.com/guillomefe/">
-                <img src="./media/images/facebook.png" alt="logo Facebook cliquable">
-            </a>
-        </div>
-    </footer>
+        </header>
+
+        <main>
+            <h1>Pâtisseries</h1>
+            <p>
+                Nous vous proposons, en magasin, diverses pâtisseries 
+                <br>Disponible aussi en commande
+                <br>COOKIES au tarif de 3.50 euros (cacahuètes, noisettes et chocolat)
+            </p>
+            <article>
+                <section>
+                    <img onclick="showbig('./media/images/patisseries/patisserie1-1.png')" src="./media/images/patisseries/patisserie1-1.png" alt="Cookies en masse avec fruits rouges">
+                    <img onclick="showbig('./media/images/patisseries/patisserie1-2.png')" src="./media/images/patisseries/patisserie1-2.png" alt="tartelettes aux mirabelles">
+                    <img onclick="showbig('./media/images/patisseries/patisserie1-3.png')" src="./media/images/patisseries/patisserie1-3.png" alt="différentes tartelettes joliment arrangées">
+                </section>
+                <section>
+                    <a href="./specificites-produit.html">
+                        <img src="./media/images/patisseries/patisserie2-1.png" alt="Un fraisier, le gâteau à la fraise">
+                    </a>
+                    <img onclick="showbig('./media/images/patisseries/patisserie2-2.png')" src="./media/images/patisseries/patisserie2-2.png" alt="éclair avec coulis rouge dessus et tartelettes à côté">
+                    <img onclick="showbig('./media/images/patisseries/patisserie2-3.png')" src="./media/images/patisseries/patisserie2-3.png" alt="éclair avec chantilly">
+                    <img onclick="showbig('./media/images/patisseries/patisserie2-4.png')" src="./media/images/patisseries/patisserie2-4.png" alt="tartelette au citron et citron">
+                </section>
+                <section>
+                    <img onclick="showbig('./media/images/patisseries/patisserie3-1.png')" src="./media/images/patisseries/patisserie3-1.png" alt="tartelettes fraise">
+                    <img onclick="showbig('./media/images/patisseries/patisserie3-2.png')" src="./media/images/patisseries/patisserie3-2.png" alt="image de la vitrine de tartelettes">
+                </section>
+            </article>
+
+            <div id="modale" class="hidden">
+                <img id="bigimage" class="hidden" src="./media/images/replacable-image.png" alt="image en grand">
+            </div>
+            <form id="close" action="javascript:;" onsubmit=" hide()" class="closeform hidden">
+                <input id="button" type="submit" class="hidden">
+            </form>
+
+        </main>
+
+        <footer>
+            <div>
+                <div>
+                    <p>Téléphone :</p>
+                    <a href="tel:0762659868">07 62 65 98 68</a>
+                </div>
+                <div>
+                    <p>Mail :</p>
+                    <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
+                </div>
+            </div>
+            <p>&copy; 2024 - 2025 GUILLOMEFE</p>
+            <div>
+                <a href="https://www.instagram.com/guillomefe/">
+                    <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
+                </a>
+                <a href="https://www.facebook.com/guillomefe/">
+                    <img src="./media/images/facebook.png" alt="logo Facebook cliquable">
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
