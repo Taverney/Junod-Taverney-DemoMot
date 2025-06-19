@@ -35,8 +35,11 @@ section p:last-child {
 input {
   width: 35px;
 }
-
-#total {
+form ~ p {
+  width: 100px;
+}
+/* prix total */
+section ~ p {
   justify-self: end;
   margin-right: 5%;
 }

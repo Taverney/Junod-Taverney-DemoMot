@@ -10,6 +10,9 @@ main div {
     padding: 10px;
     margin: 15px;
 }
+main p {
+    display: inline;
+}
 /* partie 1 avec image */
 img {
     border-radius: 10px;
