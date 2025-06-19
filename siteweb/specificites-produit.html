@@ -62,20 +62,13 @@
             <div>
                 <form>
                     <label for="quantite">Quantité : </label>
-                    <input type="number" id="quantite" min="1" value="1" onchange="calculPrix()">
+                    <input type="number" id="quantite" min="1" value="1" onchange="calculPrix('quantite')">
                 </form>
-                <p>Prix unitaire : 5.50 €</p>
-                <span id="total">Total : 5.50 €</span>
-    
-                <!-- le script permet de modifier le total en fonction de la quantité -->
-                <script>
-                    function calculPrix() {
-                        const prix = 5.50
-                        let inputContent = document.getElementById("quantite").value;
-                        document.getElementById("total").textContent= "Total : " + inputContent * prix + " €";
-                    }
-                </script>
-    
+                <p>
+                    Prix unitaire : 5.50 €
+                    <br>Total : 
+                </p>
+                <p id="total">5.50 €</p>
             </div>
             <div>
                 <h3>Mode de retrait :</h3>

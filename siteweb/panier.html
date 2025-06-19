@@ -10,6 +10,7 @@
     <link href="./media/images/logosmall.png" rel="icon" type="image/png">
     <link rel="stylesheet" href="./media/css/style-general.css">
     <link rel="stylesheet" href="./media/css/style-panier.css">
+    <script src="./media/javascript/dynamisme.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,12 +60,12 @@
                     <div>
                         <p>Quantité</p>
                         <form>
-                            <input type="number" value="0" min="1">
+                            <input type="number" value="0" min="1" id="quantite" onchange="calculPrix('quantite', '1')">
                         </form>
-                        <p>0.00 €</p>
+                        <p id="total" class="article">0.00 €</p>
                     </div>
                 </section>
-                <p id="total">Total : 0.00 €</p>
+                <p id="addition">Total : 0.00 €</p>
                 <div>
                     <a href="./connexion.html">Vers la caisse !</a>
                     <a href="./index.html">Continuer mes achats !</a>
