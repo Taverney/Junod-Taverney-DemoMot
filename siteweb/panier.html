@@ -4,28 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site référence de patisseries françaises, bienvenue chez Guillome Fe">
-    <meta name="keywords" content="patisseries françaises, chocolat, gâteaux, permaculture">
-
+    <meta name="description" content="Site référence de pâtisseries françaises, Bienvenue chez Guillome Fe">
+    <meta name="keywords" content="pâtisseries françaises, chocolat, gâteaux, permaculture">
     <link href="./media/images/logosmall.png" rel="icon" type="image/png">
     <link rel="stylesheet" href="./media/css/style-general.css">
-    <link rel="stylesheet" href="./media/css/style-panier.css">
+    <link rel="stylesheet" href="./media/css/style-evenements.css">
     <script src="./media/javascript/dynamisme.js"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <title>Panier - Guillome Fe</title>
 </head>
 <body>
+
     <div class="wrapper">
+
         <header>
+
             <div>
                 <a href="./index.html">
                     <img src="./media/images/logonew.png" alt="Logo du site, il est écrit Guillome Fe">
                 </a>
             </div>
+
             <nav>
                 <ul>
                     <li><a href="./index.html">Accueil</a></li>
@@ -38,65 +39,104 @@
                     <li><a href="./partenaires.html">Partenaires</a></li>
                 </ul>
             </nav>
+
             <div>
+
                 <a href="./panier.html">
                     <img src="./media/images/panier.png" alt="logo d'un caddie, mène vers vos achats">
                 </a>
+
                 <a href="./connexion.html">
-                    <img src="./media/images/compte.png" alt="logo d'un compte, mne vers la page de connexion">
+                    <img src="./media/images/compte.png" alt="logo d'un compte, mène vers la page de connexion">
                 </a>
+
             </div>
+
         </header>
 
         <main>
+
             <h1>Votre panier</h1>
+
             <article>
+
                 <h2>Récapitulatif de la commande</h2>
+
                 <section>
+
                     <div>
+
                         <img src="./media/images/patisseries/patisserie2-1.png" alt="image du produit choisi">
+                        
                         <p>Fraisier</p>
+                    
                     </div>
+
                     <div>
+                        
                         <p>Quantité</p>
+
                         <form>
+
                             <input type="number" value="0" min="1" id="quantite" onchange="calculPrix('quantite', '1')">
+                        
                         </form>
+                        
                         <p id="total" class="article">0.00 €</p>
+                    
                     </div>
+
                 </section>
+                
                 <p id="addition">Total : 0.00 €</p>
+                
                 <div>
                     <a href="./connexion.html">Vers la caisse !</a>
                     <a href="./index.html">Continuer mes achats !</a>
                 </div>
+
             </article>
+
         </main>
 
         <footer>
+
             <div>
+
                 <div>
                     <p>Téléphone :</p>
                     <a href="tel:0762659868">07 62 65 98 68</a>
                 </div>
+
                 <div>
                     <p>Mail :</p>
                     <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
                 </div>
+
             </div>
+
             <p>&copy; 2024 - 2025 GUILLOMEFE</p>
+
             <div>
+
                 <a href="https://www.instagram.com/guillomefe/">
                     <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
                 </a>
+
                 <a href="https://www.facebook.com/guillomefe/">
                     <img src="./media/images/facebook.png" alt="logo Facebook cliquable">
                 </a>
+
             </div>
+
         </footer>
+
     </div>
+
     <script>
         getquantity('quantite');
     </script>
+
 </body>
 </html>
+
