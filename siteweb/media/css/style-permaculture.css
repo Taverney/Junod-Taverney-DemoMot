@@ -1,7 +1,8 @@
+/* centre les textes */
 main h2, main p {
     text-align: center;
 }
-/* gérer les images */
+/* gère les images */
 main div {
     display: flex;
     flex-wrap: wrap;

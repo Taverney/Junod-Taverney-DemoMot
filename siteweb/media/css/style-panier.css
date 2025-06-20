@@ -1,8 +1,10 @@
+/* Sous-titres */
 h2 {
   text-align: center;
   margin-bottom: 15px;
 }
-/* ----- main ----- */
+
+/* ---------- main ---------- */
 section {
   padding: 20px;
   border: 2px solid #a1a1a1;
@@ -12,37 +14,39 @@ section {
   justify-content: space-between;
   margin: 0px 5% 20px;
 }
+
 section div {
   display: flex;
   gap: 10px;
   align-items: center;
 }
+
 /* image */
 main img {
   width: 120px;
   max-width: 60%;
 }
+
 /* qté et prix */
 section p:last-child {
   font-weight: bold;
 }
-@media screen and (max-width : 425px) {
-  section div:last-child {
-    flex-direction: column;
-  }
-}
+
 /* qté */
 input {
   width: 35px;
 }
+
 form ~ p {
   width: 100px;
 }
+
 /* prix total */
 section ~ p {
   justify-self: end;
   margin-right: 5%;
 }
+
 /* liens en dessous */
 article > div:last-child {
   margin-top: 25px;
@@ -51,6 +55,8 @@ article > div:last-child {
   justify-content: center;
   gap: 80px;
 }
+
+/* liens */
 main a {
   color: #ffffff;
   text-decoration: none;
@@ -58,12 +64,23 @@ main a {
   padding: 10px;
   border-radius: 4px;
 }
+
+/* lorsque les liens sont survolés */
 main a:hover {
   background: #19b326;
 }
 
 @media screen and (max-width : 450px) {
+
   article > div:last-child {
     gap: 20px;
   }
 }
+
+@media screen and (max-width : 425px) {
+
+  section div:last-child {
+    flex-direction: column;
+  }
+}
+
