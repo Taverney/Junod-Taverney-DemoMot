@@ -90,24 +90,30 @@
             </section>
             <section id="idees" onmousedown="return false" onselectstart="return false">
                 <h2>Je ne sais pas quoi prendre, il y a trop de choix...</h2>
-                <h3 onclick="generation()">J'aimerais une suggestion</h3>
+                <h3 onclick="generation()">Dites-moi tout !</h3>
                 <h3 id="recommandation"></h3>
 
                 <script>
                     function generation() {
                         let suggestion = document.getElementById("recommandation");
-                        let numero = Math.floor(Math.random() * 10);
+                        let numero = Math.floor(Math.random() * 16);
                         const possibilites = [
                         "Le 🍓Fraisier🍓 en vaut la peine, aimé de tous, il vous plaîra sûrement",
-                        "Peut-être un sandwich pour les 4 heures ? Tomate-mozarella ?🍅🧀",
+                        "Peut-être un sandwich pour les 4 heures ? Tomate-mozarella ? 🍅🧀",
                         "Un anniversaire ? Vous êtes au bon endroit, notre forêt noire ravis les grands comme les petits 🎂🎁",
-                        "Une pièce montée est toujours belle à offrir, votre copain/copine sera contente.",
+                        "Une pièce montée est toujours belle à offrir, votre moitié sera contente 🤗🤗",
                         "Faites des heureux avec du chocolat 🍫😋 !",
                         "Nos macarons sont les meilleurs 😉",
                         "Personne ne résite aux bûches de noël 🎄🎄",
-                        "Qui a dit que les éclairs étaient délicieux 🤷‍♂️ ?? C'est parfaitement vrai 😆",
-                        "Tartelettes plutôt mirabelles, fraises, myrtilles, pommes, euh..., poires, citron, ...euh... pour la suite il faut venir sur place",
-                        "Crèmes brûlées faites sur demande 🍮 et aussi bonnes que votre imagination puisse l'imaginer 🤔"
+                        "Qui a dit que les éclairs étaient délicieux ?? 🤷‍♂️ C'est parfaitement vrai 😆",
+                        "Tartelettes plutôt mirabelles, fraises, myrtilles, pommes, euh..., poires, citron, ...euh... pour la suite il faut venir sur place 🥭🍎🍋🍓🍑🍌🍐",
+                        "Crèmes brûlées faites sur demande 🍮 et aussi bonnes que votre imagination puisse l'imaginer 🤔",
+                        "Un mariage de prévu ? Nous avons un assortiment qui siéra à merveille 💍👰",
+                        "Faire un gâteau, c'est un jeu d'enfant et un plaisir d'adulte 😄",
+                        "Une envie de salé ? Nos quiches/pizzas/salades vous attendent 🥗🍕",
+                        "La vie est un gros gâteau, avec des tranches de réalité et des tranches de rêve qui n'attendent que vous 💤💤🍰🥧",
+                        "Savourez la simplicité et la beauté des délices fraîchement sortis du four 😋😋",
+                        "L'arôme du pain fraîchement cuit est un langage à part entière 🍞🥐🥖"
                         ]
                         suggestion.textContent = possibilites[numero];
                     }
