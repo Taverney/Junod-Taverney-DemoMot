@@ -1,3 +1,4 @@
+/* ---------- main ---------- */
 /* contient les articles */
 .content {
   display: flex;
@@ -16,13 +17,14 @@ article {
   margin-bottom: 50px;
 }
 
-/* textes */
+/* sous-titres */
 h2 {
   text-align: center;
   margin-bottom: 15px;
   color: #ffffff;
 }
 
+/* textes */
 main p {
   color: #ffffff;
 }
@@ -86,6 +88,8 @@ margin-top: 10px;
   cursor: pointer;
 }
 
+
+/* adapte la taille et la disposition des articles en fonction des dimensions de l'écran */
 @media screen and (max-width : 1100px) {
   
   .content {

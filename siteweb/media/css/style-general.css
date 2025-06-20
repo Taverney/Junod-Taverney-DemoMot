@@ -1,4 +1,4 @@
-/* ----- de manière générale ----- */
+/* de manière générale */
 * {
   margin : 0;
   font-family: "Quicksand", sans-serif;
@@ -20,7 +20,7 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-/* texte */
+/* titres */
 h1 {
   text-align: center;
   font-size: 50px;
@@ -28,17 +28,12 @@ h1 {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width : 340px) {
-  
-  h1 {
-    font-size: 40px;
-  }
-}
-
+/* taille des textes */
 p, a, label, input, textarea, button {
   font-size: 18px;
 }
 
+/* met en vert tous les textes ayant cette classe */
 .vert {
   color: #569528;
 }
@@ -59,19 +54,20 @@ header div {
   align-items: center;
 }
 
+/* liens image */
 header div a {
   height: 80px;
   display: flex;
   align-items: center;
 }
 
-/* le logo du site */
+/* logo du site */
 header div:first-child img {    
   border-radius: 10px;
   height: 80px;
 }
 
-/* les boutons panier et compte */
+/* boutons panier et compte */
 header div:last-child {
   display: flex;
   align-items: center;
@@ -83,7 +79,7 @@ header div:last-child img {
   height: 50px;
 }
 
-/* ----- nav ----- */
+/* nav */
 nav {
   margin-inline: 15px;
 }
@@ -100,6 +96,7 @@ nav ul li {
   list-style: none;
 }
 
+/* pages du site */
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -109,73 +106,16 @@ nav ul li a {
   border-radius: 10px;
 }
 
-/* effets quand on passe la souris + si page active */
+/* survol des pages */
 nav a:hover {
   background: #187c15;
   color: #ffffff;
 }
 
+/* page actuelle */
 .self {
   color: black;
   background: #ffffff;
-}
-
-@media screen and (max-width: 950px) {
-
-  header  {
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    gap: 20px;
-  }
-
-  /* la nav change de place */
-  header nav {
-    grid-row-start: 2;
-    grid-column: 1 / 3;
-  }
-
-  /* centrer les logos compte et panier */
-  header div:last-child a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width : 560px) {
-  
-  header a {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width : 536px) {
-  
-  header {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 500px) {
-
-  header div a {
-  height: 50px;
-}
-
-  /* logo du site rétrécit */
-  header div:first-child img {    
-  border-radius: 10px;
-  height: 50px;
-  }
-
-  header div:last-child img {
-    height: 30px;
-  }
 }
 
 /* ---------- main ---------- */
@@ -222,32 +162,17 @@ footer img {
   width: 60px;
 }
 
-@media screen and (max-width : 500px) {
-
-  footer p, footer a {
-    font-size: 12px;
-  }
-
-  footer > div:last-child {
-    gap: 5px;
-  }
-
-  footer img {
-  width: 30px;
-  }
-}
-
-
-
-/* ----- agrandir les images quand cliquées ----- */
+/* agrandir les images quand cliquées */
 /* image invisible normalement */
 .hidden {
   display: none;
 }
+
 /* visible */
 .shown {
   display: inline-block;
 }
+
 /* le fond en noir */
 .fond {
   background-color: rgba(0, 0, 0, 0.7);
@@ -262,6 +187,7 @@ footer img {
   justify-content: center;
   align-items: center;
 }
+
 /* l'image cliquée */
 .agrandie {
   max-width: 80%;
@@ -270,6 +196,7 @@ footer img {
   z-index: 2;
   border: 1px white solid;
 }
+
 /* le bouton si clic */
 .closebutton {
   position: fixed;
@@ -281,10 +208,89 @@ footer img {
   color: rgba(255, 255, 255, 0);
   background-color: rgba(255, 255, 255, 0);
 }
+
+@media screen and (max-width: 950px) {
+
+  header  {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 20px;
+  }
+
+  /* la nav change de place */
+  header nav {
+    grid-row-start: 2;
+    grid-column: 1 / 3;
+  }
+
+  /* centre les logos compte et panier */
+  header div:last-child a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
 
   .agrandie {
     height: auto;
+  }
+}
+
+@media screen and (max-width : 560px) {
+  
+  header a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width : 536px) {
+  
+  header {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  header div a {
+  height: 50px;
+}
+
+  /* logo du site rétrécit */
+  header div:first-child img {    
+  border-radius: 10px;
+  height: 50px;
+  }
+
+  header div:last-child img {
+    height: 30px;
+  }
+
+  /* taille textes footer */
+  footer p, footer a {
+    font-size: 12px;
+  }
+
+  footer > div:last-child {
+    gap: 5px;
+  }
+
+  footer img {
+  width: 30px;
+  }
+}
+
+@media screen and (max-width : 340px) {
+  /* titres changent de taille */
+  h1 {
+    font-size: 40px;
   }
 }
 

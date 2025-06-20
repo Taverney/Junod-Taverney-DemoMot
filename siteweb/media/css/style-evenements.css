@@ -5,14 +5,17 @@ article {
   gap: 14px;
   margin-inline: 10px;
 }
+
 /* colonnes d'images */
 section {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-/* les images */
+
+/* images */
 main img {
   border-radius: 10px;
   max-width: 100%;
 }
+

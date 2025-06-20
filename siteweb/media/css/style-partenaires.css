@@ -1,24 +1,33 @@
-/* ----- main ----- */
+/* ---------- main ---------- */
 main div {
   display: flex;
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
 }
-/* images (logos) */
+
+/* logos partenaires */
 main img {
   height: 180px;
-}main img:hover {
+}
+
+/* curseur normal au survol des images */
+main img:hover {
   cursor: default;
 }
 
+/* adapte la taille des logos en fonction des dimensions de l'écran */
 @media screen and (max-width : 470px) {
+
   main img {
     height: 150px;
   }
 }
+
 @media screen and (max-width : 400px) {
+
   main img {
     height: 100px;
   }
 }
+
