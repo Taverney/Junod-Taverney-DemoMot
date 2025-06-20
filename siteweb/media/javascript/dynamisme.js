@@ -43,7 +43,8 @@ function updateprice() {
     }
     document.getElementById("addition").textContent = "Total : " + total.toFixed(2) + " €";
 }
-// calcule le prix en fonction de la quantité
+// calcule le prix en fonction de la quantité (spécifications + panier)
+// si is1true === 1, on est dans la page panier et on update le total
 function calculPrix(identifiant, is1true) {
     const prix = 5.50
     let inputContent = document.getElementById(identifiant).value;
@@ -53,27 +54,21 @@ function calculPrix(identifiant, is1true) {
         updateprice();
     }
 }
-function savequantity(qte) {
-    console.log("savequantity");;
-    document.cookie = "quantity =" + document.getElementById(qte).value + ";";
-    console.log(document.cookie);
-}
 
-// test
-function getCookieByName(name) {
-    console.log("reading cookie")
-  const cookies = document.cookie.split(";");
-  for (let cookie of cookies) {
-    cookie = cookie.trim();
-    console.log(cookie);
-    if (cookie.startsWith(name + "=")) {
-      let cookievalue = cookie.substring(name.length + 1);
-      console.log(cookievalue);
-    }
-  }
+// reset quantity value (spécifications)
+function resetquantity() {
+    localStorage.clear('quantity');
 }
-function trycookie() {
-    console.log("cookie set")
-    document.cookie = "username=JohnDoe";
-    getCookieByName("username");
+// set value (of quantity - spécifications)
+function registerQuantity (idqte) {
+    let number = document.getElementById(idqte).value;
+    localStorage.setItem('quantity', number);
+    console.log("quantitée enregistrée : " + number)
+}
+// get the value (of quantity - panier)
+function getquantity(wheretoplace) {
+    qte = localStorage.getItem('quantity'); 
+    console.log(qte);
+    document.getElementById(wheretoplace).value = qte;
+    calculPrix('quantite', '1');
 }

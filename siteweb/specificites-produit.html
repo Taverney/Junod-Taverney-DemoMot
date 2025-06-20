@@ -18,7 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <title>Spécificités - Guillome Fe</title>
 </head>
-<body>
+<!-- supprimer la quantité précédente (si existe) -->
+<body onload="resetquantity()">
     <div class="wrapper">
         <header>
             <div>
@@ -72,13 +73,14 @@
             </div>
             <div>
                 <h3>Mode de retrait :</h3>
-                <form action="./panier.html">
+                <form action="./panier.html" onsubmit="registerQuantity('quantite')">
                     <fieldset>
                         <input type="radio" id="sur_place" name="livraison" required>
                         <label for="sur_place">Retirer en magasin</label>
                         <input type="radio" id="a_domicile" name="livraison" required>
                         <label for="a_domicile">Livraison à domicile (inclu frais de livraison)</label>
-                        <input type="submit" value="Ajouter au panier" onsubmit="savequantity('quantite')">
+                        <!-- sauvegarde la qte si l'article est ajouté au panier -->
+                        <input type="submit" value="Ajouter au panier">
                     </fieldset>
                 </form>
             </div>
@@ -103,7 +105,7 @@
                     <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
                 </div>
             </div>
-            <p onclick="trycookie()">&copy; 2024 - 2025 GUILLOMEFE</p>
+            <p>&copy; 2024 - 2025 GUILLOMEFE</p>
             <div>
                 <a href="https://www.instagram.com/guillomefe/">
                     <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
