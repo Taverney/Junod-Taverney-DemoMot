@@ -12,20 +12,34 @@
     justify-content: center;
 }
 /* disparition de la box */
-.anim-start.disappear {
+.disappear {
     animation: slideLefttoRight 1s forwards;
 }
-/* animation */
+/* animation box */
 @keyframes slideLefttoRight {
     to {
-        transform: translateX(100vw);
-        opacity: 0; 
+        transform: translateX(100%);
+        opacity: 0;
+        border-radius: 100%;
     }
 }
 /* titre d'entrée */
 .anim-start h1 {
     color: white;
-    text-shadow: 5px 4px 4px rgb(15, 115, 15);
+    animation: shine 2s forwards;
+    background: linear-gradient(125deg,#fff 40%, #4fc3f7 50%, #fff 60%);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* animation texte */
+@keyframes shine {
+    0% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: -100%;
+    }
 }
 
 /* ---------- main ---------- */

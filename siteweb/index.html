@@ -19,24 +19,23 @@
 </head>
 <body>
     <!-- animation début -->
-    <div id="start" class="anim-start">
-        <h1>Guillome Fe</h1>
+    <div id="startbox" class="anim-start">
+        <h1 id="starttitle">Guillome Fe</h1>
     </div>
 
     <script>
-        let animationstart = document.getElementById('start');
-      
+        let animationstartbox = document.getElementById('startbox');
+
         // lancer animation disparition après 2 secondes
         setTimeout(function disapear() {
-          animationstart.classList.add('disappear');
-        }, 2000);
+          animationstartbox.classList.add('disappear');
+        }, 1800);
       
-        // Quand l'animation de disparition est terminée, cacher complètement l'élément
-        animationstart.addEventListener('animationend', function(e) {
-            aminationstart.style.display = 'none';
-        });
+        setTimeout(function() {
+            animationstartbox.style.display = "none";
+        }, 2800);
       </script>
-      <!-- animation début -->
+      <!-- animation entrée -->
 
     <div class="wrapper">
         <header>
