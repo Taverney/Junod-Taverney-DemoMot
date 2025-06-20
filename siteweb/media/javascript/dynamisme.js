@@ -44,13 +44,12 @@ function updateprice() {
     document.getElementById("addition").textContent = "Total : " + total.toFixed(2) + " €";
 }
 // calcule le prix en fonction de la quantité (spécifications + panier)
-// si is1true === 1, on est dans la page panier et on update le total
-function calculPrix(identifiant, is1true) {
+function calculPrix(identifiant, needupdateprice) {
     const prix = 5.50
     let inputContent = document.getElementById(identifiant).value;
     document.getElementById("total").textContent= (inputContent * prix).toFixed(2) + " €";
-
-    if (is1true == 1) {
+    // si needupdateprice === 1, on est dans la page panier et on update le total
+    if (needupdateprice == 1) {
         updateprice();
     }
 }

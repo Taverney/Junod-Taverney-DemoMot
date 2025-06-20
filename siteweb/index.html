@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site référence de patisseries françaises, Bienvenue chez Guillome Fe">
+    <meta name="description" content="Site référence de pâtisseries françaises, Bienvenue chez Guillome Fe">
     <meta name="keywords" content="pâtisseries françaises, chocolat, gâteaux, permaculture">
 
     <link href="./media/images/logosmall.png" rel="icon" type="image/png">
@@ -18,6 +18,26 @@
     <title>Accueil - Guillome Fe</title>
 </head>
 <body>
+    <!-- animation début -->
+    <div id="start" class="anim-start">
+        <h1>Guillome Fe</h1>
+    </div>
+
+    <script>
+        let animationstart = document.getElementById('start');
+      
+        // lancer animation disparition après 2 secondes
+        setTimeout(function disapear() {
+          animationstart.classList.add('disappear');
+        }, 2000);
+      
+        // Quand l'animation de disparition est terminée, cacher complètement l'élément
+        animationstart.addEventListener('animationend', function(e) {
+            aminationstart.style.display = 'none';
+        });
+      </script>
+      <!-- animation début -->
+
     <div class="wrapper">
         <header>
             <div>
@@ -42,7 +62,7 @@
                     <img src="./media/images/panier.png" alt="logo d'un caddie, mène vers vos achats">
                 </a>
                 <a href="./connexion.html">
-                    <img src="./media/images/compte.png" alt="logo d'un compte, mne vers la page de connexion">
+                    <img src="./media/images/compte.png" alt="logo d'un compte, mène vers la page de connexion">
                 </a>
             </div>
         </header>
