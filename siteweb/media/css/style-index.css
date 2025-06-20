@@ -1,0 +1,114 @@
+/* box pour animation d'entrée */
+.anim-start {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(135deg, #428f03, #b5f0ad);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* disparition de la box */
+.disappear {
+    animation: slideLefttoRight 1s forwards;
+}
+/* animation box */
+@keyframes slideLefttoRight {
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+        border-radius: 100%;
+    }
+}
+/* titre d'entrée */
+.anim-start h1 {
+    color: white;
+    animation: shine 2s forwards;
+    background: linear-gradient(125deg,#fff 40%, #4fc3f7 50%, #fff 60%);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* animation texte */
+@keyframes shine {
+    0% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: -100%;
+    }
+}
+
+/* ---------- main ---------- */
+main {
+    margin: 0px 10px;
+}
+/* ----- section 1 ----- */
+h1 + section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+h1 + section img {
+    max-width: 100%;
+}
+h1 + section p {
+    margin: 0px;
+}
+h3 {
+    margin-top: 20px;
+}
+/* ----- section 2 ----- */
+section:nth-child(3) {
+    margin: 30px 0px;
+    padding: 10px 0px;
+    text-align: center;
+    border-top: 2px green dotted;   
+    border-bottom: 2px green dotted;
+}
+section:nth-child(3) h3:nth-child(2) {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background: linear-gradient(10deg ,#ca21e0, #81adff);
+}
+section:nth-child(3) h3:nth-child(2):active {
+    transform: scale(1.10);
+}
+section:nth-child(3) h3:nth-child(2):hover {
+    cursor: pointer;
+}
+/* ----- section 3 ----- */
+section:nth-child(4) > article {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 25px 0px;
+    padding: 0px;
+}
+section:nth-child(4) img {
+    max-width: 30%;
+    margin: 10px;
+}
+.texte-cote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+/* alignement vertical */
+@media screen and (max-width: 768px){
+    section:nth-child(4) article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section:nth-child(4) img {
+        max-width: 40%;
+    }
+}
