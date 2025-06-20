@@ -53,3 +53,27 @@ function calculPrix(identifiant, is1true) {
         updateprice();
     }
 }
+function savequantity(qte) {
+    console.log("savequantity");;
+    document.cookie = "quantity =" + document.getElementById(qte).value + ";";
+    console.log(document.cookie);
+}
+
+// test
+function getCookieByName(name) {
+    console.log("reading cookie")
+  const cookies = document.cookie.split(";");
+  for (let cookie of cookies) {
+    cookie = cookie.trim();
+    console.log(cookie);
+    if (cookie.startsWith(name + "=")) {
+      let cookievalue = cookie.substring(name.length + 1);
+      console.log(cookievalue);
+    }
+  }
+}
+function trycookie() {
+    console.log("cookie set")
+    document.cookie = "username=JohnDoe";
+    getCookieByName("username");
+}

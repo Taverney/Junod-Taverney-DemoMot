@@ -14,27 +14,17 @@ article {
   margin-bottom: 50px;
 }
 
-/* textes */
 h2 {
   text-align: center;
   margin-bottom: 15px;
   color: #ffffff;
 }
 
-main p {
-  color: #ffffff;
-}
-
-section:first-child, section:nth-child(2) {
+section:first-child {
   margin-bottom: 25px;
 }
 
-section a {
-  text-decoration: none;
-  color: #77db3d;
-}
-
-section a:hover {
+main p {
   color: #ffffff;
 }
 
@@ -120,7 +110,6 @@ margin-top: 10px;
 }
 
 @media screen and (max-width : 410px) {
-  
   article {
     width: 250px;
   }
