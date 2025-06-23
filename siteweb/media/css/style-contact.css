@@ -1,6 +1,6 @@
 /* ---------- main ---------- */
 /* contient les articles */
-.content {
+main > div {
   display: flex;
   gap: 150px;
   align-items: start;
