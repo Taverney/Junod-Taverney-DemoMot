@@ -45,9 +45,14 @@ function updateprice() {
 }
 // calcule le prix en fonction de la quantité (spécifications + panier)
 function calculPrix(identifiant, needupdateprice) {
-    const prix = 5.50
-    let inputContent = document.getElementById(identifiant).value;
-    document.getElementById("total").textContent= (inputContent * prix).toFixed(2) + " €";
+    // le prix unitaire vaut 5.50 € par défaut, change dans la page spécificités selon le nb de personnes
+    let prix = 10;
+    let numberpersons = document.getElementById("nbpersonnes").value;
+    prix = numberpersons/4*10;
+    console.log(prix);
+
+    let quantity = document.getElementById(identifiant).value;
+    document.getElementById("total").textContent= (quantity * prix).toFixed(2) + " €";
     // si needupdateprice === 1, on est dans la page panier et on update le total
     if (needupdateprice == 1) {
         updateprice();

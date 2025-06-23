@@ -61,14 +61,15 @@
             </div>
             <div>
                 <form>
+                    <label for="nbpersonnes">Nombre de personnes : </label>
+                    <input type="number" id="nbpersonnes" min="1" value="4" max="12" onchange="calculPrix('quantite')">
                     <label for="quantite">Quantité : </label>
                     <input type="number" id="quantite" min="1" value="1" onchange="calculPrix('quantite')">
                 </form>
-                <p>
-                    Prix unitaire : 5.50 €
-                    <br>Total : 
-                </p>
-                <p id="total">5.50 €</p>
+                <p>Prix unitaire : </p>
+                <p id="price">10 €</p>
+                <p><br>Total : </p>
+                <p id="total">10 €</p>
             </div>
             <div>
                 <h3>Mode de retrait :</h3>
