@@ -16,13 +16,17 @@
     <title>Panier - Guillome Fe</title>
 </head>
 <body>
+
     <div class="wrapper">
+
         <header>
+
             <div>
                 <a href="./index.html">
                     <img src="./media/images/logonew.png" alt="Logo du site, il est écrit Guillome Fe">
                 </a>
             </div>
+
             <nav>
                 <ul>
                     <li><a href="./index.html">Accueil</a></li>
@@ -35,68 +39,118 @@
                     <li><a href="./partenaires.html">Partenaires</a></li>
                 </ul>
             </nav>
+
             <div>
+
                 <a href="./panier.html">
                     <img src="./media/images/panier.png" alt="logo d'un caddie, mène vers vos achats">
                 </a>
+
                 <a href="./connexion.html">
                     <img src="./media/images/compte.png" alt="logo d'un compte, mène vers la page de connexion">
                 </a>
+
             </div>
+
         </header>
 
         <main>
+
             <h1>Votre panier</h1>
+
             <article>
+
                 <h2>Récapitulatif de la commande</h2>
+
                 <section>
+
                     <div>
                         <img src="./media/images/patisseries/patisserie2-1.png" alt="image du produit choisi">
                         <p>Fraisier</p>
+
                     </div>
+
                     <div>
+
                         <form>
-                            <label for="nbpersonnes">Nombre de personnes : </label>
-                            <input type="number" min="1" max="12" id="nbpersonnes" onchange="calculpanier()">
-                            <label for="quantite">Quantité : </label>
-                            <input type="number" min="1" id="quantite" onchange="calculpanier()">
+
+                            <div>
+
+                                <label for="nbpersonnes">Nombre de personnes : </label>
+                                
+                                <input type="number" min="1" max="12" id="nbpersonnes" onchange="calculpanier()">
+
+                            </div>
+                            
+                            <div>
+
+                                <label for="quantite">Quantité : </label>
+                                
+                                <input type="number" min="1" id="quantite" onchange="calculpanier()">
+
+                            </div>
+                        
                         </form>
-                        <p id="total" class="article">0.00 €</p>
+                        
+                        <div>
+
+                            <p id="total" class="article">0.00 €</p>
+
+                        </div>
+                    
                     </div>
+
                 </section>
+
                 <p id="addition">Total : 0.00 €</p>
+
                 <div>
                     <a href="./connexion.html">Vers la caisse !</a>
                     <a href="./index.html">Continuer mes achats !</a>
                 </div>
+
             </article>
+
         </main>
 
         <footer>
+
             <div>
+
                 <div>
                     <p>Téléphone :</p>
                     <a href="tel:0762659868">07 62 65 98 68</a>
                 </div>
+
                 <div>
                     <p>Mail :</p>
                     <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
                 </div>
+
             </div>
+
             <p>&copy; 2024 - 2025 GUILLOMEFE</p>
+
             <div>
+
                 <a href="https://www.instagram.com/guillomefe/">
                     <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
                 </a>
+                
                 <a href="https://www.facebook.com/guillomefe/">
                     <img src="./media/images/facebook.png" alt="logo Facebook cliquable">
                 </a>
+
             </div>
+
         </footer>
+
     </div>
+
     <script>
         getquantity();
     </script>
+
 </body>
 </html>
 
