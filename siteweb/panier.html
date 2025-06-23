@@ -65,31 +65,45 @@
                 <section>
 
                     <div>
-
                         <img src="./media/images/patisseries/patisserie2-1.png" alt="image du produit choisi">
-                        
                         <p>Fraisier</p>
-                    
+
                     </div>
 
                     <div>
-                        
-                        <p>Quantité</p>
 
                         <form>
 
-                            <input type="number" value="0" min="1" id="quantite" onchange="calculPrix('quantite', '1')">
+                            <div>
+
+                                <label for="nbpersonnes">Nombre de personnes : </label>
+                                
+                                <input type="number" min="1" max="12" id="nbpersonnes" onchange="calculpanier()">
+
+                            </div>
+                            
+                            <div>
+
+                                <label for="quantite">Quantité : </label>
+                                
+                                <input type="number" min="1" id="quantite" onchange="calculpanier()">
+
+                            </div>
                         
                         </form>
                         
-                        <p id="total" class="article">0.00 €</p>
+                        <div>
+
+                            <p id="total" class="article">0.00 €</p>
+
+                        </div>
                     
                     </div>
 
                 </section>
-                
+
                 <p id="addition">Total : 0.00 €</p>
-                
+
                 <div>
                     <a href="./connexion.html">Vers la caisse !</a>
                     <a href="./index.html">Continuer mes achats !</a>
@@ -122,7 +136,7 @@
                 <a href="https://www.instagram.com/guillomefe/">
                     <img src="./media/images/instagram.png" alt="logo Instagram cliquable">
                 </a>
-
+                
                 <a href="https://www.facebook.com/guillomefe/">
                     <img src="./media/images/facebook.png" alt="logo Facebook cliquable">
                 </a>
@@ -134,7 +148,7 @@
     </div>
 
     <script>
-        getquantity('quantite');
+        getquantity();
     </script>
 
 </body>

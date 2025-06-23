@@ -18,7 +18,7 @@
     <title>Spécificités - Guillome Fe</title>
 </head>
 <!-- supprime la quantité précédente (si existe) -->
-<body onload="resetquantity()">
+<body onload="resetdatas()">
     <div class="wrapper">
         <header>
             <div>
@@ -61,18 +61,19 @@
             </div>
             <div>
                 <form>
+                    <label for="nbpersonnes">Nombre de personnes : </label>
+                    <input type="number" id="nbpersonnes" min="1" value="4" max="12" onchange="calculspec()">
                     <label for="quantite">Quantité : </label>
-                    <input type="number" id="quantite" min="1" value="1" onchange="calculPrix('quantite')">
+                    <input type="number" id="quantite" min="1" value="1" onchange="calculspec()">
                 </form>
-                <p>
-                    Prix unitaire : 5.50 €
-                    <br>Total : 
-                </p>
-                <p id="total">5.50 €</p>
+                <p>Prix unitaire : </p>
+                <p id="price">10 €</p>
+                <p><br>Total : </p>
+                <p id="total">10 €</p>
             </div>
             <div>
                 <h3>Mode de retrait :</h3>
-                <form action="./panier.html" onsubmit="registerQuantity('quantite')">
+                <form action="./panier.html" onsubmit="registerspec()">
                     <fieldset>
                         <input type="radio" id="sur_place" name="livraison" required>
                         <label for="sur_place">Retirer en magasin</label>

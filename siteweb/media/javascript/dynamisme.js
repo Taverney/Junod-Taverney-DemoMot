@@ -34,8 +34,17 @@ function hide() {
     bouton.classList.replace("shown", "hidden");
     bouton.classList.remove("closebutton");
 }
-// additionne les elements de classe article et change le total (page panier)
-function updateprice() {
+
+
+// calcul effectué sur la page panier
+function calculpanier() {
+    let numberpersons = document.getElementById("nbpersonnes").value;
+    let quantity = document.getElementById("quantite").value;
+    let prix = numberpersons/4*10;
+
+    document.getElementById("total").textContent= (quantity * prix).toFixed(2) + " €";
+
+    // calcule le total à partir des sous-totaux des éléments du panier, les éléments possèdent la classe "article"
     const elements = document.getElementsByClassName("article");
     let total = 0;
     for(let i = 0; i < elements.length; i++) {
@@ -43,31 +52,32 @@ function updateprice() {
     }
     document.getElementById("addition").textContent = "Total : " + total.toFixed(2) + " €";
 }
-// calcule le prix en fonction de la quantité (spécifications + panier)
-function calculPrix(identifiant, needupdateprice) {
-    const prix = 5.50
-    let inputContent = document.getElementById(identifiant).value;
-    document.getElementById("total").textContent= (inputContent * prix).toFixed(2) + " €";
-    // si needupdateprice === 1, on est dans la page panier et on update le total
-    if (needupdateprice == 1) {
-        updateprice();
-    }
+// calcul effectué sur la page spécificités
+function calculspec() {
+    let prix = 10;
+    let numberpersons = document.getElementById("nbpersonnes").value;
+    let quantity = document.getElementById("quantite").value;
+
+    prix = numberpersons/4*10;
+    document.getElementById("price").textContent= (prix).toFixed(2) + " €";
+    document.getElementById("total").textContent= (quantity * prix).toFixed(2) + " €";
 }
 
-// reset quantity value (spécifications)
-function resetquantity() {
+// reset quantity and nbpersons values (spécifications)
+function resetdatas() {
     localStorage.clear('quantity');
+    localStorage.clear('parts');
 }
-// set value (of quantity - spécifications)
-function registerQuantity (idqte) {
-    let number = document.getElementById(idqte).value;
+// register the value and quantity (spécifications)
+function registerspec() {
+    let number = document.getElementById("quantite").value;
+    let parts = document.getElementById("nbpersonnes").value;
+    localStorage.setItem('parts', parts);
     localStorage.setItem('quantity', number);
-    console.log("quantitée enregistrée : " + number)
 }
-// get the value (of quantity - panier)
-function getquantity(wheretoplace) {
-    qte = localStorage.getItem('quantity'); 
-    console.log(qte);
-    document.getElementById(wheretoplace).value = qte;
-    calculPrix('quantite', '1');
+// get the quantity and nbpersons values (panier)
+function getquantity() { 
+    document.getElementById("quantite").value = localStorage.getItem('quantity');
+    document.getElementById("nbpersonnes").value = localStorage.getItem('parts');
+    calculpanier();
 }

@@ -21,6 +21,13 @@ img {
 div:first-child {
     padding: 0;
 }
+/* pour le 1er form */
+form {
+    display: grid;
+}
+form > input {
+    width: 100px;
+}
 /* partie 4 avec mode de retrait */
 fieldset {
     display: grid;
