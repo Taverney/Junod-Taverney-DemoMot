@@ -56,8 +56,19 @@
                 <h2>Gâteau aux fraises</h2>
                 <p>
                     Gâteau saveur fraises qui ravi tout le monde, grand classique de la pâtisserie, il est à la fois doux et sucré sans être écoeurant.
-                    <br><br>Des prix imbattables pour une qualité inégalée.
+                    <br>Des prix imbattables pour une qualité inégalée.
                 </p>
+                <h3>Mode de retrait :</h3>
+                <form action="./panier.html" onsubmit="registerspec()">
+                    <fieldset>
+                        <input type="radio" id="sur_place" name="livraison" required>
+                        <label for="sur_place">Retirer en magasin</label>
+                        <input type="radio" id="a_domicile" name="livraison" required>
+                        <label for="a_domicile">Livraison à domicile (inclu frais de livraison)</label>
+                        <!-- sauvegarde la qté si l'article est ajouté au panier -->
+                        <input type="submit" value="Ajouter au panier">
+                    </fieldset>
+                </form>
             </div>
             <div>
                 <form>
@@ -72,19 +83,13 @@
                 <p id="total">10 €</p>
             </div>
             <div>
-                <h3>Mode de retrait :</h3>
-                <form action="./panier.html" onsubmit="registerspec()">
-                    <fieldset>
-                        <input type="radio" id="sur_place" name="livraison" required>
-                        <label for="sur_place">Retirer en magasin</label>
-                        <input type="radio" id="a_domicile" name="livraison" required>
-                        <label for="a_domicile">Livraison à domicile (inclu frais de livraison)</label>
-                        <!-- sauvegarde la qté si l'article est ajouté au panier -->
-                        <input type="submit" value="Ajouter au panier">
-                    </fieldset>
-                </form>
+                <h3>Horaires</h3>
+                <table id="calendrier" onload="createcalendar()"></table>
+
+                <script src="./media/javascript/calendrier.js"></script>
             </div>
 
+            <!-- permet d'agrandir l'image -->
             <div id="modale" class="hidden">
                 <img id="bigimage" class="hidden" src="./media/images/replacable-image.png" alt="image en grand">
             </div>
@@ -105,7 +110,7 @@
                     <a href="mailto:guillomefe@gmail.com">guillomefe@gmail.com </a>
                 </div>
             </div>
-            <p>&copy; 2024 - 2025 GUILLOMEFE</p>
+            <p onclick="createcalendar()">&copy; 2024 - 2025 GUILLOMEFE</p>
             <div>
                 <a href="https://www.instagram.com/guillomefe/">
                     <img src="./media/images/instagram.png" alt="logo Instagram cliquable">

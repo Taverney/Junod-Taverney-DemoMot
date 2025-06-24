@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body onload="createcalendar()">
+  <h1>Calendrier</h1>
+  <div id="calendar"></div>
+
+  <script>
+        function createcalendar(){
+            let calendar = document.getElementById("calendar");
+            const date = new Date();
+            const CurrentYear = date.getFullYear();
+            const CurrentMonth = date.getMonth() + 1;
+            // le chiffre qui sera écrit dans la case
+            let dayoftheMonth = 1;
+            // donne le nombre de jours dans le mois (=le chiffre du dernier jour du mois)
+            const daysInMonth = new Date(CurrentYear, CurrentMonth, 0).getDate();
+            // indique quel est le jour de la semaine sous forme de nombre (dimanche -> 0 / lundi -> 1)
+            let startDay = date.getDay(CurrentYear, CurrentMonth, 1);
+
+            for(let weeknumber = 0; weeknumber < 6; weeknumber++){
+                let week = document.createElement('tr');
+
+                for(let daynumber = 0; daynumber < 7; daynumber++){
+                    let day = document.createElement('td');
+
+                    if(daynumber < startDay && weeknumber === 0 ){
+                        // on doit laisser la case vide car la date n'existe pas (le mois d'avant déborde)
+                        day.innerText = '';
+                    }
+                    else if(daynumber > daysInMonth){
+                        // la date exède le nombre de jour du mois, la case est vide
+                        day.innerText = '';
+                    }
+                    else{
+                        // case valide, on écrit le chiffre de la date
+                        day.innerText = dayoftheMonth;
+                        dayoftheMonth++;
+                    }
+                    week.appendChild(day);
+                }
+                calendar.appendChild(week);
+            }
+        }
+  </script>
+
+</body>
+</html>
